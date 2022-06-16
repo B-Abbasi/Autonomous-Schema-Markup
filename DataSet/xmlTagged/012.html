@@ -1,0 +1,3002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Faculty and Staff Directory - Skagit Valley College - Acalog ACMS™</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<link rel="shortcut icon" href="//acalog-clients.s3.amazonaws.com/production/skagit/img/favicon/favicon.ico" />
+<meta name="description" content="Skagit Valley College is a two-year community college serving Skagit, Island, and San Juan counties in northwest Washington state. Established in 1926, SVC grants academic transfer degrees, professional/technical degrees, and certificates."><meta name="keywords" content="SVC, Skagit Valley College, Skagit, community, collage, classes, colleges, careers, career, degrees, certificates, professional, technical, transfer, distance, education, online, bachelor&#039;s, associate, non-credit, continuing, transfer, undergraduate, technology, business, science, liberal arts, adult, literacy, esl, international, work, jobs, training, institutes, technologies, northwest, puget sound, north cascades, business, faculty, staff, services, Washington, two-year, school"><link href="//acalog-clients.s3.amazonaws.com/production/skagit/css/gateway/user-styles.css" rel="stylesheet" type="text/css">
+<link href="css/public_custom.php" rel="stylesheet" type="text/css">
+<link href="global_styles.css" rel="stylesheet" type="text/css">
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="ie.css" />
+<![endif]-->
+
+<script src="/js/prototype.js"></script>
+<script src="/js/scriptaculous.js" type="text/javascript"></script>
+<script src="/js/Tooltip.js"></script>
+<script src="/js/highlight.js" type="text/javascript"></script>
+<script src="javascripts.js" type="text/javascript" language="Javascript"></script>
+
+<script type="text/javascript">var gatewayFeatureSearchBar = true; var gatewayFeatureToolbarText = false; var gatewayFeatureBackToTopText = false;</script>
+<link type="text/css" rel="stylesheet" href="//acalog-clients.s3.amazonaws.com/global/css/gateway-styles-reset.css" />
+<link type="text/css" rel="stylesheet" href="//acalog-clients.s3.amazonaws.com/global/css/gateway-styles-nojs.css" id="gateway-styles-nojs" />
+<link type="text/css" rel="stylesheet" href="//acalog-clients.s3.amazonaws.com/production/skagit/css/gateway/gateway-styles.css" />
+<script type="text/javascript">document.getElementById("gateway-styles-nojs").parentNode.removeChild(document.getElementById("gateway-styles-nojs"));</script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script type="text/javascript" src="//acalog-clients.s3.amazonaws.com/global/js/jquery.browser.js"></script>
+<script type="text/javascript" src="//acalog-clients.s3.amazonaws.com/global/js/gateway-javascript.js"></script>
+<!--[if lte IE 8]><script type="text/javascript" src="//acalog-clients.s3.amazonaws.com/global/js/select-fix.js"></script><![endif]-->
+</head>
+<body>
+	<noscript><p><span class="error">Javascript is currently not supported, or is disabled by this browser. Please enable Javascript for full functionality.</span></p></noscript>	<a href="#accesskeys" accesskey="k"><img src="/img/spacer.gif" width="0" height="0" border="0" alt="The page uses Browser Access Keys to help with keyboard navigation. Click to learn more" style="height: 0px"></a><a href="#acalog-nav" accesskey="n"><img src="/img/spacer.gif" width="0" height="0" border="0" alt="Skip to Navigation" style="height: 0px"></a><a name="accesskeys"></a><div class="accesskeys">
+	<p>Different browsers use different keystrokes to activate accesskey shortcuts. Please reference the following list to use access keys on your system.</p>
+	<dl>
+		<dt>Alt and the accesskey, for Internet Explorer on Windows</dt>
+		<dt>Shift and Alt and the accesskey, for Firefox on Windows</dt>
+		<dt>Shift and Esc and the accesskey, for Windows or Mac</dt>
+		<dt>Ctrl and the accesskey, for the following browsers on a Mac: Internet Explorer 5.2, Safari 1.2, Firefox, Mozilla, Netscape 6+.</dt>
+	</dl>
+	<p>We use the following access keys on our gateway</p>
+	<dl>
+		<dt>n Skip to Navigation</dt>
+		<dt>k Accesskeys description</dt>
+		<dt>h Help</dt>
+	</dl>
+</div><table cellspacing="0" class="toplevel">
+  <tr>
+	<td colspan="2" class="block_n2_and_content" id="acalog-header"><div id="acalog-client-javascript" class="acalog-custom">
+<script type="text/javascript">
+jQuery(document).ready( function($) { if ($('#gateway-page').length) {
+    function wrap_table_block_n2_and_content() {
+        jQuery('table.block_n2_and_content').attr('id', 'table_block_n2_and_content_wrapper_fix_1');
+        jQuery('table.block_n2_and_content').parent().attr('id', 'table_block_n2_and_content_wrapper_fix_2');
+        var table_block_n2_and_content_wrapper = document.createElement('div');
+        table_block_n2_and_content_wrapper.setAttribute('id', 'table_block_n2_and_content_wrapper');
+        document.getElementById('table_block_n2_and_content_wrapper_fix_2').appendChild(table_block_n2_and_content_wrapper);
+        table_block_n2_and_content_wrapper.appendChild(document.getElementById('table_block_n2_and_content_wrapper_fix_1'));
+        jQuery('#table_block_n2_and_content_wrapper_fix_1, #table_block_n2_and_content_wrapper_fix_2').removeAttr('id');
+    }
+    wrap_table_block_n2_and_content();
+
+    }});
+</script>
+<script type="text/javascript" src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/script-block-01.js"></script>
+<script type="text/javascript" src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/script-block-02.js"></script>
+<script src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/foundation.min.js" type="text/javascript"></script>
+<script src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/app.js" type="text/javascript"></script>
+<script src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/responsive-tables.js" type="text/javascript"></script>
+<script type="text/javascript" src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/script-block-03.js"></script>
+</div>
+<!-- End Client Javascript -->
+
+<!-- Start Client Header -->
+<div id="acalog-client-header" class="acalog-custom">
+    
+<!-- display background banner -->
+    <div class="headerband hide-for-small" style='background:url("\//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/programbanner.jpg") top no-repeat;' title="Student looking at microscope"></div>
+<!-- Header -->
+    <div class="row" style="z-index: 101;">
+        
+<!-- Logo Wrap -->
+        <div class="three columns" style="z-index: 101;">
+            <div class="logopanel">
+                <p>
+                    <a href="http://www.skagit.edu/default.asp"><img src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/logo.png" alt="Skagit Valley College logo"></a>
+                </p>
+            </div>
+        </div>
+<!-- END Logo Wrap -->
+        <div class="six columns hide-for-small" style="z-index: 101;">
+            <div class="button-bar">
+                <ul class="button-group radius">
+                    <li>
+                        <a id="qlink-trigger" class="topnav button small radius success qlink-expand" href="http://www.skagit.edu/directory.asp_Q_pagenumber_E_507" name="qlink-trigger">Quick Links</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+<!-- Search Bar -->
+        <div class="three columns" style="z-index: 101;">
+            <div id="qlinkbox-trigger-small" class="show-for-small button quick" style="background: #9E1B32;">
+                <ul id="qlinkbox-trigger-small-ul" style="list-style:none;">
+                    <li>
+                        <a href="http://www.skagit.edu/directory.asp_Q_pagenumber_E_507">Quick Links</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="search-box" style="z-index: 101;">
+                <div id="search-form">
+                    <form id="sf" action="http://www.skagit.edu/googlesearch.asp" method="get" name="sf">
+                        <input id="search-text" name="qs" placeholder="Search our Site" type="text"><button id="search-button" type="submit">Go</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+<!-- END Search Bar -->
+    </div>
+    <div id="qlink-box">
+        <div class="row">
+            <div class="twelve columns">
+                
+<!-- FAST FINDS -->
+                <ul id="fastlink-id" class="panel fastlinkpanel block-grid six-up" style="list-style-type: none; background: none; border: none;">
+                    <li>
+                        <a href="http://portal.skagit.edu"><img src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/onlineadvisor-icon.png" alt="Online advisor icon"><br>
+                        Staff Portal</a>
+                    </li>
+                    <li>
+                        <a href="http://www.skagit.edu/mysvc"><img src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/mysvc-icon.png" alt=""><br>
+                        MySVC</a>
+                    </li>
+                    <li>
+                        <a href="http://www.skagit.edu/sched_search.asp"><img src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/schedsearch-icon.png" alt="Schedule Catalog Search icon"><br>
+                        Schedule &amp; Catalog</a>
+                    </li>
+                    <li>
+                        <a href="https://skagit.instructure.com/login"><img src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/canvas_icon.png" alt="Canvas icon"><br>
+                        Canvas</a>
+                    </li>
+                    <li>
+                        <a href="http://www.skagit.edu/news.asp_Q_pagenumber_E_1831"><img src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/onlineadvisor-icon.png" alt="Online advisor icon"><br>
+                        Live Chat Advisor</a>
+                    </li>
+                    <li>
+                        <a href="http://www.skagit.edu/dir1.asp"><img src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/contacts-icon.png" alt="Contacts Directory icon"><br>
+                        Directory</a>
+                    </li>
+                    <li style="list-style: none; display: inline">
+                        <div class="clearjunk"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns">
+                <ul class="block-grid five-up mobile">
+                    <li class="qlinkpad">
+                        <ul class="qlinks">
+                            <li class="qlinkhead">Academic Resources
+                            </li>
+                            <li>
+                                <a href="http://www.skagit.edu/a2zpnc.asp">A-Z Programs &amp; Courses</a>
+                            </li>
+                            <li>
+                                <a href="http://www.skagit.edu/calendar.asp_Q_pagenumber_E_3769">Academic Calendar</a>
+                            </li>
+                            <li>
+                                <a href="http://www.cardinalbookstore.com/">Cardinal Bookstore</a>
+                            </li>
+                            <li>
+                                <a href="http://faculty.skagit.edu">Faculty Pages</a>
+                            </li>
+                            <li>
+                                <a href="http://library.skagit.edu/">Library/Media Services</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="qlinkpad">
+                        <ul class="qlinks">
+                            <li class="qlinkhead">Campus Connections
+                            </li>
+                            <li>
+                                <a href="http://skagitfoundation.org/">Foundation &amp; Alumni</a>
+                            </li>
+                            <li>
+                                <a href="http://www.skagit.edu/news.asp_Q_pagenumber_E_3521">Job Opportunities</a>
+                            </li>
+                            <li>
+                                <a href="http://www.skagit.edu/dir1.asp">Locations &amp; Directions</a>
+                            </li>
+                            <li>
+                                <a href="http://www.svcnews.org">News, Information &amp; Events</a>
+                            </li>
+                            <li>
+                                <a href="http://www.skagit.edu/directory.asp_Q_pagenumber_E_516">Safety, Security &amp; Parking</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="qlinkpad">
+                        <ul class="qlinks">
+                            <li class="qlinkhead">Enrollment Resources
+                            </li>
+                            <li>
+                                <a href="http://www.skagit.edu/directory.asp_Q_pagenumber_E_455">Admissions &amp; Registration</a>
+                            </li>
+                            <li>
+                                <a href="http://www.skagit.edu/directory.asp_Q_pagenumber_E_40">Financial Aid</a>
+                            </li>
+                            <li>
+                                <a href="http://www.skagit.edu/directory.asp_Q_pagenumber_E_41">Get Started</a>
+                            </li>
+                            <li>
+                                <a href="http://www.skagit.edu/news.asp_Q_pagenumber_E_235">Transcripts</a>
+                            </li>
+                            <li>
+                                <a href="http://www.skagit.edu/news.asp_Q_pagenumber_E_2765">Tuition &amp; Fees</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="qlinkpad">
+                        <ul class="qlinks">
+                            <li class="qlinkhead">Student Life
+                            </li>
+                            <li>
+                                <a href="http://www.skagit.edu/directory.asp_Q_pagenumber_E_326">Athletics</a>
+                            </li>
+                            <li>
+                                <a href="http://www.skagit.edu/directory.asp_Q_pagenumber_E_327">Campus Housing</a>
+                            </li>
+                            <li>
+                                <a href="http://assvc.com/?q=clubs">Student Clubs</a>
+                            </li>
+                            <li>
+                                <a href="http://assvc.com/?q=student-government">Student Government</a>
+                            </li>
+                            <li>
+                                <a href="http://www.skagit.edu/schedules.asp_Q_pagenumber_E_3632">Student Life Events Calendar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="qlinkpad">
+                        <ul class="qlinks">
+                            <li class="qlinkhead">Support Programs
+                            </li>
+                            <li>
+                                <a href="http://www.skagit.edu/directory.asp_Q_pagenumber_E_38">Counseling &amp; Career Services</a>
+                            </li>
+                            <li>
+                                <a href="http://www.skagit.edu/directory.asp_Q_pagenumber_E_58">Disability Access Services</a>
+                            </li>
+                            <li>
+                                <a href="http://www.skagit.edu/news.asp_Q_pagenumber_E_1831">Online Advisor</a>
+                            </li>
+                            <li>
+                                <a href="http://www.skagit.edu/directory.asp_Q_pagenumber_E_75">TRIO Program</a>
+                            </li>
+                            <li>
+                                <a href="http://www.skagit.edu/directory.asp_Q_pagenumber_E_456">Tutoring</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+<!-- end resources lists -->
+        <div class="row">
+            <div class="six columns">
+                <ul class="button-group radius socialwrap">
+                    <li class="socialicons">
+                        <a href="http://www.facebook.com/skagitvalleycollege" target="_blank"><img src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/icon-facebook.png" alt="Facebook icon"></a>
+                    </li>
+                    <li class="socialicons">
+                        <a href="http://twitter.com/#!/SVCCollege" target="_blank"><img src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/icon-twitter.png" alt="Twitter icon"></a>
+                    </li>
+                    <li class="socialicons">
+                        <a href="http://www.youtube.com/user/SkagitValleyCollege/videos?view=1" target="_blank"><img src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/icon-tube.png" alt="You Tube icon"></a>
+                    </li>
+                    <li class="socialicons">
+                        <a href="http://svcevents.skagit.edu/Rss.aspx"><img src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/icon-rss.png" alt="RSS icon"></a>
+                    </li>
+                    <li class="socialicons">
+                        <span style="margin-top: 0.45em; display: block; color: #FFF;">|&#160;&#160;<a href="http://svcnews.org/" target="_blank" style="text-transform: uppercase; color: #FFF;">News &amp; Events Center</a></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="six columns">
+                <ul class="button-group radius socialwrap">
+                    <li class="socialicons">
+                        <span style="margin-top: 0.45em; display: block;"><a href="http://www.skagit.edu/news.asp_Q_pagenumber_E_2849" style="color: #FFF;">2016 Commencement Information</a></span>
+                    </li>
+                </ul>
+            </div>
+        </div><a class="close-qlinkbox" href="#">×</a>
+    </div>
+<!--Main Content-->
+    <div class="row hide-for-small templatespacer"></div>
+    <div class="row contentwrap">
+        
+<!-- Nav Menu -->
+        <div class="three columns">
+            <div class="menu_div hide-for-small" id="main-navigation">
+                <ul>
+                    <li>
+                        <a href="http://www.skagit.edu/directory.asp_Q_pagenumber_E_507">Explore Programs</a>
+                    </li>
+                    <li>
+                        <a href="http://www.skagit.edu/directory.asp_Q_pagenumber_E_41">Get Started</a>
+                    </li>
+                    <li>
+                        <a href="http://www.skagit.edu/directory.asp_Q_pagenumber_E_510">Academic Support</a>
+                    </li>
+                    <li>
+                        <a href="http://www.skagit.edu/directory.asp_Q_pagenumber_E_295">Campus Life</a>
+                    </li>
+                    <li>
+                        <a href="http://www.skagit.edu/directory.asp_Q_pagenumber_E_8">About SVC</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_div show-for-small" id="mobilenav">
+                <div class="row show-for-small homemobilespacer"></div>
+                <div class="mobilenavwrap">
+                    <span class="mobilenav-caption">site navigation</span><select id="mobilenav">
+                        <option class="mobileop" value="default.asp">
+                            Home
+                        </option>
+                        <option value="directory.asp_Q_pagenumber_E_507" selected>
+                            &#160;&#160;&#160;Explore Programs
+                        </option>
+                        <option value="directory.asp_Q_pagenumber_E_521">
+                            &#160;&#160;&#160;&#160;&#160;Areas Of Study
+                        </option>
+                        <option value="directory.asp_Q_pagenumber_E_527">
+                            &#160;&#160;&#160;&#160;&#160;High School Programs
+                        </option>
+                        <option value="directory.asp_Q_pagenumber_E_596">
+                            &#160;&#160;&#160;&#160;&#160;Training for Business
+                        </option>
+                        <option value="directory.asp_Q_pagenumber_E_587">
+                            &#160;&#160;&#160;&#160;&#160;Basic Education For Adults
+                        </option>
+                        <option value="external.asp_Q_pagenumber_E_3265">
+                            &#160;&#160;&#160;&#160;&#160;Catalog &amp; Schedules
+                        </option>
+                        <option value="directory.asp_Q_pagenumber_E_412">
+                            &#160;&#160;&#160;&#160;&#160;Community Education
+                        </option>
+                        <option value="directory.asp_Q_pagenumber_E_528">
+                            &#160;&#160;&#160;&#160;&#160;E-learning
+                        </option>
+                        <option value="directory.asp_Q_pagenumber_E_548">
+                            &#160;&#160;&#160;&#160;&#160;Español
+                        </option>
+                        <option value="directory.asp_Q_pagenumber_E_411">
+                            &#160;&#160;&#160;&#160;&#160;Leadership Skagit
+                        </option>
+                        <option value="directory.asp_Q_pagenumber_E_363">
+                            &#160;&#160;&#160;&#160;&#160;Learning Communities and Integrative Experiences
+                        </option>
+                        <option value="directory.asp_Q_pagenumber_E_584">
+                            &#160;&#160;&#160;&#160;&#160;Maestros Para el Pueblo
+                        </option>
+                        <option value="directory.asp_Q_pagenumber_E_585">
+                            &#160;&#160;&#160;&#160;&#160;Study Abroad
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="nine columns hide-for-small contentspacer"></div>
+    </div>
+</div>
+<!-- End Client Header -->
+
+<!-- Start Client Footer -->
+<div id="acalog-client-footer" class="acalog-custom">
+    <div class="footer-tier-two">
+        <div class="row">
+            <div class="three columns">
+                <a href="http://www.skagit.edu/directory.asp_Q_pagenumber_E_326"><img src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/footermascot.png" alt="SVC Cardinal Mascot"></a>
+            </div>
+            <div class="three columns">
+                <p>
+                    <strong>Main Campus</strong><br>
+                    &lt;Address&gt;2405 East College Way<br>
+                    Mount Vernon, WA 98273&lt;/Address&gt;
+                </p>
+                <p>
+                    English &lt;Contact&gt;(360) 416-7600&lt;/Contact&gt;<br>
+                    Español &lt;Contact&gt;(360) 416-7600 Ext.8&lt;/Contact&gt;<br>
+                    (TTY) &lt;Contact&gt;(360) 416-7718&lt;/Contact&gt;
+                </p>
+                <p class="locations-link">
+                    <a href="http://www.skagit.edu/dir1.asp">view additional SVC locations</a>
+                </p>
+            </div>
+            <div class="three columns">
+                <ul class="policy-links">
+                    <li>
+                        <a href="http://www.skagit.edu/files.asp_Q_pagenumber_E_2590" title="view the Accreditation information.">Accreditation</a>
+                    </li>
+                    <li>
+                        <a href="http://www.skagit.edu/news.asp_Q_pagenumber_E_3807" title="view Emergency Response plan documents.">Emergency Response Plan</a>
+                    </li>
+                    <li>
+                        <a href="http://www.skagit.edu/files.asp_Q_pagenumber_E_3306" title="view Security reports.">Security Reports</a>
+                    </li>
+                    <li>
+                        <a href="http://www.skagit.edu/files.asp_Q_pagenumber_E_2650" title="view the Whistleblower information.">Whistleblower Information</a>
+                    </li>
+                    <li>
+                        <a href="http://www.skagit.edu/files.asp_Q_pagenumber_E_2650" title="view Polices and Prodecures.">Policies &amp; Procedures</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="three columns">
+                <div class="footer-logos fade">
+                    <a href="http://skagitfoundation.org/" target="_blank"><img src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/fndfooterlogo.png" alt="Skagit Foundation Logo"></a>
+                </div><br>
+                <div class="footer-logos fade">
+                    <a href="http://mcintyrehall.org/" target="_blank"><img src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/mcfooterlogo.png" alt="McIntyre Hall Logo"></a>
+                </div><br>
+                <div class="footer-logos fade">
+                    <a href="http://www.skagit.edu/directory.asp_Q_pagenumber_E_490" target="_blank"><img src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/atdlogo.png" alt="ATD Logo"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-tier-three">
+            <div class="row">
+                <div class="twelve columns">
+                    <ul class="copyright-links">
+                        <li>© 2016 Skagit Valley College
+                        </li>
+                        <li>
+                            <a href="http://www.skagit.edu/sitemap.asp" title="view sitemap.">Site Map</a>
+                        </li>
+                        <li>
+                            <a href="http://www.skagit.edu/news.asp_Q_pagenumber_E_3236" title="view Privacy Policy information.">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="http://www.skagit.edu/news.asp_Q_pagenumber_E_3231" title="view Copyright &amp; Disclaimer information.">Disclaimer</a>
+                        </li>
+                        <li>
+                            <a href="http://www.skagit.edu/news.asp_Q_pagenumber_E_3235" title="view Non-Discrimination information.">Non-Discrimination</a>
+                        </li>
+                        <li>
+                            <a href="mailto:webmaster@skagit.edu" title="Email Web Services">Email Web Services</a>
+                        </li>
+                    </ul>
+                    <div class="footer-social">
+                        <ul class="button-group radius socialwrap">
+                            <li class="socialicons">
+                                <a href="http://www.facebook.com/skagitvalleycollege" target="_blank"><img src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/icon-facebook.png" alt="Facebook icon"></a>
+                            </li>
+                            <li class="socialicons">
+                                <a href="http://twitter.com/#!/SVCCollege" target="_blank"><img src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/icon-twitter.png" alt="Twitter icon"></a>
+                            </li>
+                            <li class="socialicons">
+                                <a href="http://www.youtube.com/user/SkagitValleyCollege/videos?view=1" target="_blank"><img src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/icon-tube.png" alt="You Tube icon"></a>
+                            </li>
+                            <li class="socialicons">
+                                <a href="http://svcevents.skagit.edu/Rss.aspx"><img src="//acalog-clients.s3.amazonaws.com/production/skagit/img/gateway/icon-rss.png" alt="RSS icon"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Client Footer --></td>
+  </tr>
+  <tr class="acalog-block-n1">
+    <td class="block_n1_left">&#160;&#160;&#160;</td>
+	<td class="block_n1_right"><span class="n1_header">	Skagit Valley College</span>
+	</td>
+  </tr>
+  <tr>
+	<td class="block_border_left">&#160;&#160;&#160;</td>
+	<td class="block_n2_and_content">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="block_n2_and_content">
+			  <tr>
+				<!-- Begin N3 -->
+						<td class="block_date_outer_left" width="10">&#160;</td>
+		  <td class="block_date_inner" width="150">
+			<div align="center"><span class="date">&#160;
+Oct 05, 2017		</span></div>
+		  </td>
+		  <td class="block_date_outer_right" width="10">&#160;</td>
+		  <td valign="top" class="block_n2_and_content">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+
+				<td class="block_n3_off block_n3_left"><span class="n3_header"><span id="acalog-catalog-name">2017-2018 Catalog SVC</span>&#160;</span></td>
+				  <td class="block_n3_off block_n3_right" align="right">
+				<form name="select_catalog" method="post" action="/index.php" style="margin: 0px">
+					<table border="0" cellspacing="0" cellpadding="0">
+					  <tr valign="top">
+						<td>&#160;</td><td>&#160;				</td>
+					  </tr>
+					</table>
+				</form>
+				  </td>
+			  </tr>
+			</table>
+		  </td>
+			<!-- End N3. -->
+			  </tr>
+				<tr>
+			<!-- N2 goes here. -->
+		  	<td class="block_n2" style="font-size:0px; clear: both;" width="150" valign="top" colspan="3" id="acalog-nav">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="block_n2_content">
+	<tr>
+		<td class="block_n2_search" 
+			>
+	  <form name="n2_search" method="get" action="/search_advanced.php" onSubmit="return validateSearchOptions()">
+		  <input type="hidden" title="Cur Cat OID" name="cur_cat_oid" value="8">
+		  <input type="hidden" title="Search Database" name="search_database" value="Search">
+		  <input type="hidden" title="Search" name="search_db" value="Search">
+		  <input type="hidden" title="cpage" name="cpage" value="1">
+		  <input type="hidden" title="ecpage" name="ecpage" value="1">
+		  <input type="hidden" title="ppage" name="ppage" value="1">
+		  <input type="hidden" title="spage" name="spage" value="1">
+		  <input type="hidden" title="tpage" name="tpage" value="1">
+		  <span class="n2_search_header">Catalog Search</span>			<br>
+			<span style="display: none;"><select name="location" id="location" style="width: 120px;" tabindex="100" title="Choose Search Location">
+					<option value="-1">Select an option</option>
+				<option value="3">Courses</option>
+				<option value="1">Programs</option>
+				<option value="28">Hierarchy Items</option>
+				<option value="30">Other Content</option>
+				<option value="33" selected>Entire Catalog</option>
+			</select><br></span>
+			<span style="display: auto;"><input type="text" title="Keyword" name="filter[keyword]" value="Enter Keyword  " size="15" maxlength="150" id="keyword" onFocus="if (this.value == 'Enter Keyword  ') { this.value=''; }" style="width: 120px; padding-left: 0.4em;" tabIndex="101">
+			<input type="submit" title="GO" value="GO" tabindex="103"><br></span>
+			<span style="display: none;"><br /><input type="checkbox" title="Exact Match" name="filter[exact_match]" tabindex="102" value="1"  id="exact_match_n2"> <label for="exact_match_n2" class="n2_search">Whole Word/Phrase</label><br /></span>
+		  <span class="n2_search"><a href="/search_advanced.php?catoid=8" class="navbar" tabIndex="104">Advanced Search</a></span><br>
+	  </form>
+		</td>
+	</tr>
+	<tr>
+	  <td>
+		<hr class="navbar">
+	  </td>
+	</tr>
+	<tr>
+	  <td nowrap>
+		<table width="170" border="0" cellspacing="0" cellpadding="0" class="block_n2_links">
+		  <tr>
+			<td id="acalog-navigation">
+			  <div class="n2_links">&#160;&#160;<a href="/index.php?catoid=8" class="navbar" tabindex="105">Catalog Home</a></div>
+<br>			</div>
+							<div class="n2_links">&#160;&#160;<a href="/content.php?catoid=8&navoid=186" class="navbar" tabIndex="106">Degrees &amp; Certificates Quick View</a>			</div>
+							<div class="n2_links">&#160;&#160;<a href="/content.php?catoid=8&navoid=184" class="navbar" tabIndex="107">Areas of Study</a>			</div>
+							<div class="n2_links">&#160;&#160;<a href="/content.php?catoid=8&navoid=183" class="navbar" tabIndex="108">Course Descriptions</a>			</div>
+			<br>			</div>
+							<div class="n2_links">&#160;&#160;<a href="/content.php?catoid=8&navoid=179" class="navbar" tabIndex="109">General Information</a>			</div>
+							<div class="n2_links">&#160;&#160;<a href="/content.php?catoid=8&navoid=185" class="navbar" tabIndex="110">Academic Information</a>			</div>
+							<div class="n2_links">&#160;&#160;<a href="/content.php?catoid=8&navoid=169" class="navbar" tabIndex="111">Enrollment Services</a>			</div>
+							<div class="n2_links">&#160;&#160;<a href="/content.php?catoid=8&navoid=248" class="navbar" tabIndex="112">Financial Aid</a>			</div>
+							<div class="n2_links">&#160;&#160;<a href="/content.php?catoid=8&navoid=174" class="navbar" tabIndex="113">Support Services</a>			</div>
+							<div class="n2_links">&#160;&#160;<a href="/content.php?catoid=8&navoid=180" class="navbar" tabIndex="114">Policies &amp; Regulations</a>			</div>
+							<div class="n2_links">&#160;&#160;<a href="/content.php?catoid=8&navoid=182" class="navbar" tabIndex="115">Student Life</a>			</div>
+							<div class="n2_links">&#160;&#160;<a href="/content.php?catoid=8&navoid=177" class="navbar" tabIndex="116">Student Rights &amp; Responsibilities</a>			</div>
+							<div class="n2_links">&#160;&#160;<a href="/content.php?catoid=8&navoid=175" class="navbar" tabIndex="117">Faculty and Staff Directory</a>			</div>
+						</td>
+		  </tr>
+		</table>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+		<hr class="navbar">
+	  </td>
+	</tr>
+  </table>
+		</td>
+<!-- End of N2 -->
+				  <td valign="top" class="block_content_outer">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					  <tr>
+						<td class="block_content" colspan="2">
+						  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+							<td>
+								<div class="help_block" style="float: right"><a href="help.php?catoid=8" onclick="javascript:acalogPopup('help.php?catoid=8', 'help', 770, 530, 'yes');return false;" class="help" tabIndex="203" accesskey="h" target="_blank"><b>HELP</b></a></div>
+								<span class="acalog_catalog_name">2017-2018 Catalog SVC</span>							<h1 id="acalog-content">
+							  Faculty and Staff Directory							  </h1>
+								<div style="float: right"><a rel="nofollow" href="/content.php?catoid=8&amp;navoid=175&amp;print" onclick="acalogPopup('/content.php?catoid=8&amp;navoid=175&amp;print', 'print_preview', 770, 530, 'yes');return false;" target="_blank" class="print_link acalog-highlight-ignore" alt="Text Version"><img src="img/print.gif" width="10" height="14" border="0" hspace="5" align="absmiddle" alt="Print-Friendly Page.">Print-Friendly Page</a></div><div class="acalog-social-media-links" style="float: right;"><a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcatalog.skagit.edu%2Fcontent.php%3Fcatoid%3D8%26navoid%3D175&t=I am looking at the Faculty and Staff Directory page at Skagit Valley College" border="0" target="_blank"><img src="acalogicons/facebook_16.png" border="0" alt="Facebook this Page"></a> <a href="http://twitter.com/intent/tweet?u=http%3A%2F%2Fcatalog.skagit.edu%2Fcontent.php%3Fcatoid%3D8%26navoid%3D175&t=Check out this page at Skagit Valley College" border="0" target="_blank"><img src="/acalogicons/twitter_16.png" border="0" alt="Tweet this Page"></a></div>							  </td>
+							</tr>
+							<tr>
+							  <td>
+								<hr>
+				  							  </td>
+							</tr>
+							<tr>
+							  <td>
+                                                              <table border="0" cellpadding="1" cellspacing="1" class="acalog-export-remove" style="width:100%">
+	<tbody>
+		<tr>
+			<td style="width: 50%;">
+			<ul>
+				<li><a href="#board-of-trustees">Board of Trustees</a></li>
+				<li><a href="#administration">Administration</a></li>
+				<li><a href="#faculty">Faculty</a></li>
+				<li><a href="#exempt-staff">Exempt Staff</a></li>
+			</ul>
+			</td>
+			<td style="width: 50%;">
+			<ul>
+				<li><a href="#classified-staff">Classified Staff</a></li>
+				<li><a href="#faculty-administration-emeriti">Faculty &amp; Administration Emeriti</a></li>
+				<li><a href="#staff-emeriti">Staff Emeriti</a></li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr />
+<h2><a id="board-of-trustees" name="board-of-trustees"></a>Board of Trustees</h2>
+
+<p><strong>&lt;PersonName&gt;Kathryn Bennett&lt;/PersonName&gt;, </strong>&lt;Title&gt;Chair&lt;/Title&gt;<br />
+  <strong>&lt;PersonName&gt;Megan Scott O&#8217;Bryan&lt;/PersonName&gt;, </strong>&lt;Title&gt;Vice Chair&lt;/Title&gt;<br />
+<strong>&lt;PersonName&gt;Lindsay Fiker&lt;/PersonName&gt;<br />
+&lt;PersonName&gt;Christon Skinner&lt;/PersonName&gt;<br />
+&lt;PersonName&gt;John Stephens&lt;PersonName&gt;</strong></p>
+<h2><a id="administration" name="administration"></a>Administration</h2>
+
+<p>A | B | <a href="#c">C</a> | D | E | <a href="#f">F</a> | <a href="#g">G</a> | H | I | <a href="#j">J</a> | <a href="#k">K</a> | <a href="#l">L</a> | <a href="#m">M</a> | N | O | <a href="#p">P</a> | Q | R | S | <a href="#t">T</a> | U | V | W | X | <a href="#y">Y</a> | Z</p>
+
+<p><strong><a id="c" name="c"></a>&lt;PersonName&gt;Cailloux, Laura&lt;PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Vice President - Whidbey Island Campus, South Whidbey and San Juan Centers, Marine Tech Center&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, Lewis and Clark College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, Portland State University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;Ed.D., University of Washington&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Clark, Anne&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Executive Director of College Advancement&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, Seattle Pacific University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;M.Ed., Lesley University&lt;/Qualification&gt;</p>
+
+<p><strong><a id="f" name="f"></a>&lt;PersonName&gt;Franklin, Marilyn&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Director of Institutional Planning, Effectiveness &amp; Grants</em>&lt;/Title&gt;<br />
+&lt;Qualification&gt;BA, William Jewell College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MPA, University of Kansas&lt;/Qualification&gt;</p>
+
+<p><strong><a id="g" name="g"></a>&lt;PersonName&gt;Greeno, Darren&lt;/PersonName&gt;</strong><br />
+&lt;Title&gt;Dean of Workforce Education&lt;/Title&gt;<br />
+&lt;Qualification&gt;AA, Seattle Central&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, University of Washington&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, The New School for Social Research&lt;/Qualification&gt;</p>
+
+<p><strong><a id="j" name="j"></a>&lt;PersonName&gt;Jaramillo, Ed&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Vice President of Administrative Services&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, University of San Diego&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, University of California - Irvine&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MFA, Academy of Arts University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;Ph.D., Defense Management University&lt;/Qualification&gt;</p>
+
+<p><strong><a id="k" name="k"></a>&lt;PersonName&gt;Keegan, Thomas&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;President</em>&lt;/Title&gt;<br />
+&lt;Qualification&gt;AA, Skagit Valley College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, University of Puget Sound&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, Western Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;Ed.D., University of Washington&lt;/Qualification&gt;</p>
+
+<p><strong><a id="l" name="l"></a>&lt;PersonName&gt;Lawson, Kenneth&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Vice President for Instruction&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, MA, University of Utah&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;Ph.D., University of Washington&lt;/Qualification&gt;</p>
+
+<p><strong><a id="m" name="m"></a>&lt;PersonName&gt;Mast, Gabriel&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Dean of Arts &amp; Sciences&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, Dickenson College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, Brown University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MS, University of Wisconsin&lt;/Qualification&gt;</p>
+
+<p><strong><a id="p" name="p"></a>&lt;PersonName&gt;Paul, David&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Vice President for Student Services&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, Seattle University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, Miami University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;Ph.D., University of Illinois at Urbana-Champaign&lt;/Qualification&gt;</p>
+
+<p><strong><a id="t" name="t"></a>&lt;PersonName&gt;Tucker, Carolyn&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Executive Director of Human Resources</em>&lt;/Title&gt;<br />
+&lt;Qualification&gt;BA, Antioch University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MBA, WGU-Washington&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;SPHR, Human Resources Certification Institute&lt;/Qualification&gt;&#160;</p>
+
+<p><strong><a id="y" name="y"></a>&lt;PersonName&gt;Youngquist, Joan&lt;/PersonName&gt;</strong><br /> 
+  &lt;Title&gt;
+<em>Dean of Basic Education&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BS, MA, MS, Ph.D., University of Nebraska&lt;/Qualification&gt;</p>
+
+<h2><a id="faculty" name="faculty"></a>Faculty</h2>
+
+<p><a href="#a1">A</a> | <a href="#b1">B</a> | <a href="#c1">C</a> | <a href="#d1">D</a> | <a href="#e1">E</a> | <a href="#f1">F</a> | <a href="#g1">G</a> | <a href="#h1">H</a> | <a href="#i1">I</a> | <a href="#j1">J</a> | <a href="#k1">K</a> | <a href="#l1">L</a> | <a href="#m1">M</a> | N | <a href="#o1">O</a> | <a href="#p1">P</a> | Q | <a href="#r1">R</a> | <a href="#s1">S</a> | <a href="#t1">T</a> | U | V | <a href="#w1">W</a> | X | Y | <a href="#z1">Z</a></p>
+
+<p>Date in parentheses indicates year of initial service to SVC.</p>
+
+<p><strong><a id="a1" name="a1"></a>&lt;PersonName&gt;Anderson, Eric&lt;/PersonName&gt; (1988)</strong><br />
+<em>&lt;Title&gt;Coordinator&lt;/Title&gt;, &lt;Title&gt;Disability Access Services/Counselor</em>&lt;/Title&gt;<br />
+&lt;Qualification&gt;BA, Pacific Lutheran University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;M.Ed., Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Anderson, Nancy&lt;/PersonName&gt; (1986)</strong><br />
+<em>&lt;Domain&gt;Physical Education</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BA, Pacific Lutheran University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MS, Seattle Pacific University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Andringa, Bernie&lt;/PersonName&gt; (2001)</strong><br />
+<em>&lt;Domain&gt;Diesel Power Technology&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;AT, Universal Technical Institute, Phoenix&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Ashe, Bobbi&lt;/PersonName&gt; (2007)</strong><br />
+<em>&lt;Domain&gt;English Language Acquisition&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BA, Evergreen State College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;M.Ed., University of Portland&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Avendano-Ibarra, Claudia&lt;/PersonName&gt;</strong><br />
+<em>&lt;Domain&gt;Human Services&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;MS, Eastern Washington University&lt;/Qualification&gt;</p>
+
+<p><strong><a id="b1" name="b1"></a>&lt;PersonName&gt;Baker, Michael&lt;/PersonName&gt; (2005)</strong><br />
+<em>&lt;Domain&gt;Welding Technology&lt;/Domain&gt;</em><br />
+&lt;InstituteName&gt;Whatcom Community College&lt;/InstituteName&gt;<br />
+&lt;Title&gt;Journeyman Fabricator&lt;/Title&gt;<br />
+&lt;Title&gt;Certified Master Welder&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Beemer, Michael&lt;/PersonName&gt; (2011)</strong><br />
+<em>&lt;Domain&gt;Marine Maintenance Technology&lt;/Domain&gt;, Whidbey Island Campus</em><br />
+&lt;Qualification&gt;AAUCT, Skagit Valley College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, University of Washington&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MS, Ball State University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Bender, Jeff&lt;/PersonName&gt; (2013)</strong><br />
+<em>&lt;Domain&gt;English</em>&lt;/Domain&gt;&#160;<br />
+&lt;Qualification&gt;BA, Davidson College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, Columbia University, New York&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Bianco, Elena&lt;/PersonName&gt; (2008)</strong><br />
+<em>&lt;Title&gt;Librarian&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, MLS, University of Washington&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Boland, Jennifer&lt;/PersonName&gt; (2014)</strong><br />
+<em>College and Career Bridge</em><br />
+&lt;Qualification&gt;BA, MA, University of Northern Colorado&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Brady, Brian&lt;/PersonName&gt; (2014)</strong><br />
+<em>&lt;Domain&gt;Science&lt;/Domain&gt;, Whidbey Island Campus</em><br />
+&lt;Qualification&gt;BS, California State University - San Marcos&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;Ph.D., University of California - Riverside&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Brierley, Rose&lt;/PersonName&gt; (1997)</strong><br />
+<em>&lt;Title&gt;Counselor&lt;/Title&gt;/&lt;Title&gt;Running Start&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, M.Ed., Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Bundy, Ruth&lt;/PersonName&gt; (2010)</strong><br />
+<em>&lt;Domain&gt;Nursing&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BS, California State University - Chico&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;M.P.A., California State University - Long Beach&lt;/Qualification&gt;</p>
+
+<p><strong><a id="c1" name="c1"></a>&lt;PersonName&gt;Cahill, Neta Simpkins&lt;/PersonName&gt; (2005)</strong><br />
+Intensive English Language<br />
+&lt;Qualification&gt;BA, University of Washington&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, University of British Columbia&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Carter, Paulette&lt;/PersonName&gt; (2012)</strong><br />
+<em>&lt;Domain&gt;Nursing&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;AA, ASN, Peninsula College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BSN, MSN, Loyola University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Christian, Tiffany&lt;/PersonName&gt; (2017)</strong><br />
+<em>&lt;Domain&gt;English&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BA, Pacific University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MFA, Chapman University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, University of Oregon&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;Ph.D., Washington State University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Cofer, Deborah&lt;/PersonName&gt; (1997)</strong><br />
+<em>&lt;Domain&gt;Mathematics</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BA, Colorado College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, State University of New York at Binghamton&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Coorough, Calleen&lt;/PersonName&gt; (1995)</strong><br />
+<em>&lt;Domain&gt;Multimedia &amp; Interactive Technology&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BS, University of Wyoming&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;M.Ed., Ph.D., University of Idaho&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Cox, Dani&lt;/PersonName&gt; (1988)</strong><br />
+<em>&lt;Domain&gt;Culinary Arts &amp; Hospitality Management</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BS, Central Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;Diploma, Western Culinary Institute&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Curtis, Joy&lt;/PersonName&gt;</strong><br />
+<em>&lt;Domain&gt;Nursing&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;AA, Blue Mountain Community College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, Oregon Health Services University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, Western Governor&#8217;s University&lt;/Qualification&gt;</p>
+
+<p><strong><a id="d1" name="d1"></a>&lt;PersonName&gt;Davern, Gail&lt;/PersonName&gt; (2007)</strong><br />
+  &lt;Domain&gt;<em>English&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus&lt;/InstituteName&gt;</em><br />
+&lt;Qualification&gt;BA, MA, University of Utah&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Deschenes, Susan&lt;/PersonName&gt; (1997)</strong><br />
+<em>&lt;Domain&gt;Physical Education&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MBA, City University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Dixon, Sally&lt;/PersonName&gt; (1989)</strong><br />
+  &lt;Domain&gt;
+<em>Business Management&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MS, University of Southern California&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MBA, Western Governors University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Donahue, Michael&lt;/PersonName&gt; (1985)</strong><br />
+  &lt;Domain&gt;
+<em>Psychology&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus&lt;/InstituteName&gt;</em><br />
+&lt;Qualification&gt;AA, Orange Coast College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, University of California, Santa Barbara&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;M.Ed., Loyola/Marymount University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;Ph.D., University of Texas at Austin&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;Qualification&gt;Dorothy, Carolyn&lt;/Qualification&gt; (2015)</strong><br />
+<em>&lt;Domain&gt; Allied Health Education&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Dunbar, Kurt&lt;/PersonName&gt; (1997)</strong><br />
+<em>&lt;Domain&gt;History &amp; Social Science&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BA, MA, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Duncan, Kristine&lt;/PersonName&gt; (1998)</strong><br />
+<em>&lt;Domain&gt;Nutrition&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BA, MA, Central Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Dunn, Doris&lt;/PersonName&gt; (1996)</strong><br />
+<em>&lt;Domain&gt;Computer Information Systems&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus&lt;InstituteName&gt;</em><br />
+&lt;Qualification&gt;ATA, Skagit Valley College&lt;/Qualification&gt;</p>
+
+<p><strong><a id="e1" name="e1"></a>&lt;PersonName&gt;Edwards, Amy&lt;/PersonName&gt; (1997)</strong><br />
+<em>&lt;Domain&gt;Mathematics</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BA, George Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, University of California - Berkeley&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Edwards, Dan&lt;/PersonName&gt; (2014)</strong><br />
+<em>&lt;Domain&gt;Nursing&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus&lt;/InstituteName&gt;</em><br />
+&lt;Qualification&gt;MA, Western Governors University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Edwards, Terry&lt;/PersonName&gt; (2013)</strong><br />
+<em>&lt;Domain&gt;Criminal Justice&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BA, Kentucky Wesleyan College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MPA, Golden Gate University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;J.D., University of Louisville&lt;/Qualification&gt;</p>
+
+<p><strong><a id="f1" name="f1"></a>&lt;PersonName&gt;Fackler-Adams, Ben&lt;/PersonName&gt; (1999)</strong><br />
+<em>&lt;Domain&gt;Physical Sciences</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BA, BS, University of California - Santa Cruz&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MS, Western Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;Ph.D., University of California - Santa Barbara&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Forsythe, Lisa&lt;/PersonName&gt; (2006)</strong><br />
+<em>&lt;Domain&gt;Invest&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;AA, Skagit Valley College&lt;/Qualification&gt;&#160;<br />
+&lt;Qualification&gt;BA, Washington State University&lt;/Qualification&gt;&#160;<br />
+&lt;Qualification&gt;MA, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Fotheringham, Don&lt;/PersonName&gt; (2000)</strong><br />
+<em>&lt;Domain&gt;Computer Information Systems&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus&lt;/InstituteName&gt;</em><br />
+&lt;Qualification&gt;BA, University of Ottawa&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;B.Ed., University of Toronto&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Fouquette, Lynne&lt;/PersonName&gt; (1982)</strong><br />
+<em>&lt;Domain&gt;Psychology&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BA, MS, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Frazier, Bethany&lt;/PersonName&gt; (2002)</strong><br />
+<em>&lt;Domain&gt;Health Fitness&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BS,MS, Washington State University&lt;/Qualification&gt;</p>
+
+<p><strong><a id="g1" name="g1"></a>&lt;PersonName&gt;Gage, Abel&lt;/PersonName&gt; (1998)</strong><br />
+<em>&lt;Domain&gt;Mathematics</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BS, Wheaton College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MS, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Graber, Daniel&lt;/PersonName&gt; (2001)</strong><br />
+<em>&lt;Domain&gt;Mathematics</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;AAUCT, Skagit Valley College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BS, MS, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Graham, Jason&lt;/PersonName&gt; (2007)</strong><br />
+<em>&lt;Domain&gt;English&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BA, MA, Western Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MFA, University of Virginia&lt;/Qualification&gt;</p>
+
+<p><strong><a id="h1" name="h1"></a>&lt;PersonName&gt;Haley, May&lt;/PersonName&gt; (1989)</strong><br />
+<em>&lt;Domain&gt;College Success Skills&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BS, MS, University of Washington&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Hall, R. Scott&lt;/PersonName&gt; (1994)</strong><br />
+<em>&lt;Domain&gt;Automotive Technology</em>&lt;/Domain&gt;<br />
+&lt;InstituteName&gt;Bellingham Technical College&lt;/InstituteName&gt;<br />
+&lt;Qualification&gt;BS, University of Idaho&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;ASE Certified Master Technician&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Hall, Sharon&lt;/PersonName&gt; (1990)</strong><br />
+<em>&lt;Domain&gt;Art&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus&lt;/InstituteName&gt;</em><br />
+&lt;Qualification&gt;BFA, Arkansas State University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MFA, University of Washington&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Hallberg-Gross, Vicki&lt;/PersonName&gt; (2015)</strong><br />
+<em>&lt;Domain&gt;Nursing&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus&lt;/InstituteName&gt;</em><br />
+&lt;Qualification&gt;BSN, Pacific Lutheran University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MSN, Norwich University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Halliday, Hilda&lt;/PersonName&gt; (1985)</strong><br />
+<em>&lt;Domain&gt;Computer Science&lt;/Domain&gt;, &lt;Domain&gt;Mathematics</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BS, MS, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Hanchett, Brian&lt;/PersonName&gt; (1994)</strong><br />
+<em>&lt;Domain&gt;Counselor&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BS, M.Ed., Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Handley, Jennifer&lt;/PersonName&gt; (1998)</strong><br />
+<em>&lt;Domain&gt;English</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BA, Western Oregon State College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, New Mexico State University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Harris, Nicole&lt;/PersonName&gt; (2016)</strong><br />
+  &lt;Domain&gt;
+<em>Navigator</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BA, MA, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Heinze, Brian&lt;/PersonName&gt; (2007)</strong><br />
+<em>&lt;Domain&gt;Mathematics</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BS, MAT, George Fox University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MS, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Heinze, Susanna&lt;/PersonName&gt; (2006)</strong><br />
+<em>&lt;Domain&gt;Biology</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BS, George Fox University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MS, University of North Carolina - Chapel Hill&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Henderson, Justin&lt;/PersonName&gt; (2011)</strong><br />
+<em>&lt;Domain&gt;Medical Assistant&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;ATA, Skagit Valley College&lt;/Qualification&gt;</p>
+
+<p><strong><a id="i1" name="i1"></a>&lt;PersonName&gt;Iverson, Mary&lt;/PersonName&gt; (2008)</strong><br />
+<em>&lt;Domain&gt;Art&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BA, MFA, University of Washington&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BFA, Cornish College of the Arts&lt;/Qualification&gt;</p>
+
+<p><strong><a id="j1" name="j1"></a>&lt;PersonName&gt;Johnson, Diane&lt;/PersonName&gt; (1998)</strong><br />
+<em>&lt;Domain&gt;Music&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BA, University of California&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, University of California&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;DMA, Claremont Graduate University&lt;/Qualification&gt;</p>
+
+<p><strong><a id="k1" name="k1"></a>&lt;PersonName&gt;Kocol, Greta&lt;/PersonName&gt; (1997)</strong><br />
+<em>&lt;Domain&gt;Mathematics</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BA, MS, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Kuebelbeck, Mary&lt;/PersonName&gt; (2013)</strong><br />
+&lt;Domain&gt;
+<em>Welding Technology&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;AAS, Bellingham Technical College&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Kunz, Julie&lt;/PersonName&gt; (2014)</strong><br />
+<em>&lt;Title&gt;Counselor, Disability Access Services, Whidbey Island Campus</em>&lt;/Title&gt;<br />
+&lt;Qualification&gt;BS, Washington State University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MS, Central Washington University&lt;/Qualification&gt;</p>
+
+<p><strong><a id="l1" name="l1"></a>&lt;PersonName&gt;LaBombard, Louis&lt;/PersonName&gt; (1990)</strong><br />
+  &lt;Domain&gt;
+<em>Social Science&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus&lt;/InstituteName&gt;</em><br />
+&lt;Qualification&gt;BA, Florida Atlantic University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, Trinity University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Larson, Kathy&lt;/PersonName&gt; (1997)</strong><br />
+<em>&lt;Domain&gt;Mathematics&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus&lt;/InstituteName&gt;</em><br />
+&lt;Qualification&gt;BA Ed, M.Ed., Eastern Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Lind, Jason&lt;/PersonName&gt; (1999)</strong><br />
+<em>&lt;Domain&gt;Communication Studies</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, University of Maine&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Loonat, Farhana&lt;/PersonName&gt; (2014)</strong><br />
+<em>&lt;Domain&gt;Philosophy&lt;/Domain&gt;/&lt;Domain&gt;Political Science&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;B.Soc.Sc., University of KwaZulu-Natal&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, University of Virginia&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;Ph.D., Vanderbilt University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Luckmann, Charles&lt;/PersonName&gt; (1997)</strong><br />
+<em>&lt;Domain&gt;English&lt;/Domain&gt;, &lt;Domain&gt;Ethnic Studies&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BA, University of Illinois&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong><a id="m1" name="m1"></a>&lt;PersonName&gt;Malphrus, Bob&lt;/PersonName&gt; (2005)</strong><br />
+<em>&lt;Domain&gt;Human Services&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BA, Washington State University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;M.Ed., City University, Bellingham&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Mardesich, Matthew&lt;/PersonName&gt;</strong><br />
+<em>&lt;Domain&gt;Marine Maintenance Technology&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus</em>&lt;/InstituteName&gt;<br />
+&lt;Qualification&gt;AA, ATA, Skagit Valley College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BS, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Markert, Jean&lt;/PersonName&gt; (1991)</strong><br />
+  <em>High School Completion</em><br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;&#160;<br />
+&lt;Qualification&gt;MA, Western Governors University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Martinez-Griego, Barbara&lt;/PersonName&gt; (2005)</strong><br />
+<em>&lt;Domain&gt;Early Childhood Ed.&lt;/Domain&gt;/&lt;Domain&gt;Education Paraprofessional</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BS, New Mexico State University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;M.Ed., Goddard College&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Mattox, Tami&lt;/PersonName&gt; (1990)</strong><br />
+<em>&lt;Title&gt;Medical Assistant&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;Paramedicine Certificate, Tacoma Community College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;ATA, Skagit Valley College&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;McGuire, Beth&lt;/PersonName&gt; (1990)</strong><br />
+<em>&lt;Title&gt;Counselor&lt;Title&gt;, TRIO Student Support Services</em><br />
+&lt;Qualification&gt;BA, Linfield College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MS, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;McVicker, Patrick&lt;/PersonName&gt; (2000)</strong><br />
+<em>&lt;Domain&gt;Fire Protection Technology&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;AAS, Portland Community College&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Mills, Margret&lt;/PersonName&gt; (1998)</strong><br />
+<em>&lt;Title&gt;Librarian&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, University of Wisconsin - Eau Claire&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MLS, University of Wisconsin - Madison&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Mohler, Christina&lt;/PersonName&gt; (2013)</strong><br />
+<em>&lt;Domain&gt;English&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus&lt;/InstituteName&gt;</em><br />
+&lt;Qualification&gt;BA, Boston University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;Ph.D., City University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Moore, Linda&lt;/PersonName&gt; (1979)</strong><br />
+<em>&lt;Domain&gt;Developmental Education&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BA, Pacific Lutheran University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;M.Ed., University of Puget Sound&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Morales, Dusti&lt;/PersonName&gt; (2014)</strong><br />
+<em>&lt;Domain&gt;Mathematics&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus&lt;/InstituteName&gt;</em><br />
+&lt;Qualification&gt;AA, Ventura College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BS, California Polytechnic University - San Luis Obispo&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, University of California - San Diego&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Morris, Damond&lt;/PersonName&gt; (2014)</strong><br />
+<em>&lt;Domain&gt;Drama&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BA, MA, Western Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;Ph.D., University of Oregon&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Munsey, Ben&lt;/PersonName&gt; (1992)</strong><br />
+<em>&lt;Domain&gt;English Language Acquisition&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;AB, Occidental College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Musk, Dinty&lt;/PersonName&gt; (2017)</strong><br />
+<em>&lt;Domain&gt;Chemistry&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus&lt;/InstituteName&gt;</em><br />
+&lt;Qualification&gt;BA, Taylor University&lt;/Qualification&gt;&#160;<br />
+&lt;Qualification&gt;Ph.D., University of Illinois&lt;/Qualification&gt;</p>
+
+<p><strong><a id="o1" name="o1"></a>&lt;PersonName&gt;Oakes, Tamara&lt;/PersonName&gt; (1990)</strong><br />
+<em>&lt;Domain&gt;Office Administration and Accounting Technologies</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;AA, Skagit Valley College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;O&#8217;Connell, Edward (Ted)&lt;/PersonName&gt; (1999)</strong><br />
+<em>&lt;Domain&gt;English&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BA, DePauw University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MFA, University of Oregon&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Ogden, John&lt;/PersonName&gt; (2002)</strong><br />
+<em>&lt;Domain&gt;Business Administration&lt;/Domain&gt;, &lt;Domain&gt;Economics</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BA, University of Washington&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MBA, University of Washington&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;J.D., Gonzaga Law School&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Overby, Bill&lt;/PersonName&gt; (2003)</strong><br />
+<em>&lt;Domain&gt;Criminal Justice&lt;/Domain&gt;, &lt;InstituteName&gt;Parks Law Enforcement and Basic Law Enforcement Reserve Academies</em>&lt;/InstituteName&gt;<br />
+&lt;Qualification&gt;BA, Washington State University&lt;/Qualification&gt;</p>
+
+<p><strong><a id="p1" name="p1"></a>&lt;PersonName&gt;Palmer, Clifford&lt;/PersonName&gt; (2008)</strong><br />
+<em>&lt;Domain&gt;Biology&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BS, California Polytechnic State University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MS, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Pickett, Malia&lt;/PersonName&gt; (2015)</strong><br />
+<em>&lt;Domain&gt;Nursing</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;MA, University of Washington&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Poole, Bruce&lt;/PersonName&gt; (2011)</strong><br />
+<em>&lt;Domain&gt;Manufacturing Technology</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;MS, Walden University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Price, Shelly&lt;/PersonName&gt; (2015)</strong><br />
+<em>&lt;Domain&gt;Nursing</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BA, College of Wooster&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;M.Ed., University of Georgia&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MSN, Xavier University&lt;/Qualification&gt;</p>
+
+<p><strong><a id="r1" name="r1">&lt;PersonName&gt;Riley, Heather&lt;/PersonName&gt; (2016)</a></strong><br />
+<em>&lt;Domain&gt;Nursing</em>&lt;/Domain&gt;&#160;<br />
+&lt;Qualification&gt;BA, MA, California State University, Dominguez Hills&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Robertson, Gretchen&lt;/PersonName&gt; (2004)</strong><br />
+<em>&lt;Domain&gt;College and Career Bridge&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BA, University of Washington&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MIT, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Rodriguez Ortiz, Gilbert&lt;/PersonName&gt; (2007)</strong><br />
+<em>&lt;Domain&gt;Culinary Arts &amp; Hospitality Management</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;ATA, Skagit Valley College&lt;/Qualification&gt;</p>
+
+<p><strong><a id="s1" name="s1"></a>&lt;PersonName&gt;Sanchez, José&lt;/PersonName&gt; (2003)</strong><br />
+<em>&lt;Domain&gt;World Languages - Spanish&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BA, Brigham Young University - Hawaii&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, Indiana State University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Scammell, Matt&lt;/PersonName&gt; (2010)</strong><br />
+<em>&lt;Domain&gt;Business</em>&lt;/Domain&gt;&#160;<br />
+&lt;Qualification&gt;AA, Skagit Valley College&lt;/Qualification&gt;&#160;<br />
+&lt;Qualification&gt;BA, MBA, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Scaringe, Cynthia&lt;/PersonName&gt; (1999)</strong><br />
+<em>&lt;Domain&gt;Nursing</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BSN, Niagara University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MSN, Syracuse University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Schaffner, Joventina&lt;/PersonName&gt; (1990)</strong><br />
+<em>&lt;Domain&gt;Mathematics&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BS, University of San Carlos, Philippines&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MS, Washington State University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Schaffner, Ron&lt;/PersonName&gt; (2005)</strong><br />
+<em>&lt;Domain&gt;Automotive Technology</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;A.A., A.A.S., Spokane Community College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, Puget Sound Christian College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;ASE Certified Master Machinist and Certified Master Technician&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Smith, Linda&lt;/PersonName&gt; (1989)</strong><br />
+<em>&lt;Domain&gt;Communication Studies&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BA, Seattle Pacific University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Smith, Roxanne&lt;/PersonName&gt; (2006)</strong><br />
+<em>&lt;Domain&gt;Chemistry</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BA/BS, Evergreen State College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MS, Western Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;Ph.D., University of Northern Colorado&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Spinnie, Kristi&lt;/PersonName&gt; (1997)</strong><br />
+<em>&lt;Domain&gt;Office Administration &amp; Accounting Technologies</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BA, Northwest Nazarene College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, Ohio State University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MBA, Ashland University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;St. John, Tony&lt;/PersonName&gt; (2015)</strong><br />
+<em>&lt;Domain&gt;Chemistry</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BA, Whitman University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;Ph.D., University of Washington&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Stady, Jeff&lt;/PersonName&gt; (1994)</strong><br />
+<em>&lt;Domain&gt;Mathematics&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus&lt;/InstituteName&gt;</em><br />
+&lt;Qualification&gt;BS, MS, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Stevens, Chuck&lt;/PersonName&gt; (1990)</strong><br />
+<em>&lt;Domain&gt;Mathematics</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;AAS, Whatcom Community College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, MS, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Svendsen, Claus&lt;/PersonName&gt; (1992)</strong><br />
+<em>&lt;Domain&gt;Environmental Conservation</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BS, MS, Copenhagen University, Denmark&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;Ph.D., University of Washington&lt;/Qualification&gt;</p>
+
+<p><strong><a id="t1" name="t1"></a>&lt;PersonName&gt;Talbott, Vicki&lt;/PersonName&gt; (1992)</strong><br />
+<em>&lt;Domain&gt;Academic English for Speakers of Other Languages</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, Pennsylvania State University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Tutt, Ernest&lt;/PersonName&gt; (2004)</strong><br />
+<em>&lt;Domain&gt;Communication Studies</em>&lt;Domain&gt;<br />
+&lt;Qualification&gt;ASN, Grayson County College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, University of Texas&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MS, Ed.D., Texas A&amp;M University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Vonnahme, Erin&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Librarian&lt;/Title&gt;, &lt;InstituteName&gt;Whidbey Island Campus&lt;/InstituteName&gt;</em><br />
+&lt;Qualification&gt;BA, MA, Southern Illinois University Edwardsville&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MLIS, University of Washington&lt;/Qualification&gt;</p>
+
+<p><strong><a id="w1" name="w1"></a>&lt;PersonName&gt;Weyers, Chad&lt;/PersonName&gt; (2010)</strong><br />
+<em>&lt;Domain&gt;Psychology</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;BA, Central Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, Lewis and Clark College&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Winslow, Lora&lt;/PersonName&gt; (2008)</strong><br />
+<em>&lt;Domain&gt;Communication Studies&lt;Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus</em>&lt;/InstituteName&gt;<br />
+&lt;Qualification&gt;BA, MA, California State University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Wood, Natsuko&lt;/PersonName&gt; (2016)</strong><br />
+<em>&lt;Domain&gt;Nursing</em>&lt;/Domain&gt;&#160;<br />
+&lt;Qualification&gt;Ph.D., University of Washington&lt;/Qualification&gt;</p>
+
+<p><strong><a id="z1" name="z1"></a>&lt;PersonName&gt;Zukoski, Ann&lt;/PersonName&gt; (2003)</strong><br />
+<em>&lt;Domain&gt;Physics&lt;/Domain&gt;</em><br />
+&lt;Qualification&gt;BA, University of California&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MS, San Jose State University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;Ph.D., University of Southern Mississippi&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Zwolenski, Christopher (Kip)&lt;/PersonName&gt; (2015)</strong><br />
+<em>&lt;Domain&gt;Early Childhood Education</em>&lt;/Domain&gt;<br />
+&lt;Qualification&gt;AA, Whatcom Community College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, Goddard College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;M.Ed., Western Washington University&lt;/Qualification&gt;</p>
+
+<h2><a id="exempt-staff" name="exempt-staff"></a>Exempt Staff</h2>
+
+<p><a href="#a2">A</a> | <a href="#b2">B</a> | <a href="#c2">C</a> | <a href="#d2">D</a> | <a href="#e2">E</a> | <a href="#f2">F</a> | <a href="#g2">G</a> | <a href="#h2">H</a> | I | <a href="#j2">J</a> | <a href="#k2">K</a> | <a href="#l2">L</a> | <a href="#m2">M</a> | <a href="#n2">N</a> | <a href="#o2">O</a> | <a href="#p2">P</a> | Q | <a href="#r2">R</a> | <a href="#s2">S</a> | <a href="#t2">T</a> | U | <a href="#v2">V</a> | <a href="#w2">W</a> | X | Y | <a href="#z2">Z</a></p>
+
+<p>Date in parentheses indicates year of initial service to SVC.</p>
+
+<p><a id="a2" name="a2"><strong>&lt;PersonName&gt;Acob-Nash, Mari&lt;/PersonName&gt; (2017)</strong></a><br />
+<em>&lt;Title&gt;Associate Vice President for International Education&lt;/Title&gt;&#160;</em><br />
+&lt;Qualification&gt;BA, University of Washington&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, Western Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;Ph.D., Oregon State University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Allen, Vanessa&lt;/PersonName&gt; (2008)</strong><br />
+<em>&lt;Title&gt;Instructional Software Administrator&lt;/Title&gt;&#160;</em><br />
+&lt;Qualification&gt;AAUCT, Skagit Valley College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BS, BA, Central Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Ainley, Arden&lt;/PersonName&gt; (1988)</strong><br />
+<em>&lt;Title&gt;Chief Public Information Officer&lt;/Title&gt;&#160;</em><br />
+&lt;Qualification&gt;BA, University of Washington&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Allison, Crystal&lt;/PersonName&gt; (2015)</strong><br />
+<em>&lt;Title&gt;Associate Dean Financial Aid&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;M.Ed., Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Avary, Ann&lt;/PersonName&gt; (2006)</strong><br />
+<em>&lt;Title&gt;Center of Excellence Director, Whidbey Island Campus</em>&lt;/Title&gt;<br />
+&lt;Qualification&gt;BA, Indiana State University&lt;/Qualification&gt;</p>
+
+<p><a id="b2" name="b2"><strong>&lt;PersonName&gt;Badgley, Marcus&lt;/PersonName&gt; (2016)</strong></a><br />
+<em>&lt;Title&gt;Web Content Specialist</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Barnett, Lisa&lt;/PersonName&gt; (1997)</strong><br />
+<em>&lt;Title&gt;Navigator - Student Success Center&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;ATA, Skagit Valley College&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PeronName&gt;Beattie, James&lt;/PersonName&gt; (1993)</strong><br />
+<em>&lt;Title&gt;Assistant Director of Facilities &amp; Operations&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;Cert., Bellingham Vocational Technical&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Bennett, Lynnette&lt;/PersonName&gt; (2015)</strong><br />
+<em>&lt;Title&gt;Associate Dean, Workforce Education&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BS, Western Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;M.Ed., Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Benalcazar Cotera, Veronica&lt;/PersonName&gt; (2016)</strong><br />
+<em>&lt;Title&gt;Associate Director ECEAP</em>&lt;/Title&gt;<br />
+&lt;Qualification&gt;MA, Ashford University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Boller, Keith&lt;/PersonName&gt; (2008)</strong><br />
+<em>&lt;Title&gt;Head Start Program Manager&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;AA, Palm Beach Community College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, Florida State University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, University of Florida&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Bruce, Gail&lt;/PersonName&gt; (1990)</strong><br />
+<em>&lt;Title&gt;Associate Dean, Whidbey Island Campus</em>&lt;/Title&gt;<br />
+&lt;Qualification&gt;BA, M.Ed., Whitworth College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;Ph.D., Gonzaga University&lt;/Qualification&gt;</p>
+
+<p><strong><a id="c2" name="c2"></a>&lt;PersonName&gt;Carlson, Tamara&lt;/PersonName&gt; (2005)</strong><br />
+<em>&lt;Title&gt;Program Analyst</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Chu, An&lt;/PersonName&gt; (2014)</strong><br />
+<em>&lt;Title&gt;International Student Recruiter&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;AA, South Seattle Community College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, Ho Chi Minh Open University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, Seattle University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Chiabai, Susan&lt;/PersonName&gt; (2016)</strong><br />
+<em>&lt;Title&gt;Administrative Specialist to the Vice President - WIC&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Cook, Kim&lt;/PersonName&gt; (2005)</strong><br />
+<em>&lt;Title&gt;Controller</em>&lt;/Title&gt;<br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Coslor, Melinda&lt;/PersonName&gt; (1983)</strong><br />
+<em>&lt;Title&gt;Director of Library Services&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BS, Washington State University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;M.Libr., University of Washington&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;Ph.D., Oregon State University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Craig, Steve&lt;/PersonName&gt; (1993)</strong><br />
+<em>&lt;Title&gt;Production Manager, McIntyre Hall</em>&lt;/Title&gt;</p>
+
+<p><strong><a id="d2" name="d2"></a>&lt;PersonName&gt;Davis, Kim&lt;/PersonName&gt; (1999)</strong><br />
+<em>&lt;Title&gt;Development Coordinator​</em>&lt;/Title&gt;<br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Davis, Pamela&lt;/PersonName&gt; (2012)</strong><br />
+<em>&lt;Title&gt;Development and Donor Relations Manager​&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;ATA, Skagit Valley College&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Davis Overby, Tee&lt;/PersonName&gt; (1997)</strong><br />
+<em>&lt;Title&gt;Coordinator of Evening Programs/Administrative Assistant&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BS, University of Missouri - Columbia&lt;/Qualification&gt;</p>
+
+<p><strong><a id="e2" name="e2"></a>&lt;PersonName&gt;Eldred, Kathy&lt;/PersonName&gt; (2013)</strong><br />
+<em>&lt;Title&gt;Purchasing, Grants and Contracts Manager - Business Office&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, Washington State University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Epperson, Steven&lt;/PersonName&gt; (1977)</strong><br />
+<em>&lt;Title&gt;Director, Athletic Programs&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, BS, MS, Washington State University&lt;/Qualification&gt;</p>
+
+<p><strong><a id="f2" name="f2"></a>&lt;PersonName&gt;Fernandez, Alison&lt;/PersonName&gt; (2010)</strong><br />
+<em>&lt;Title&gt;Director of Student Success&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Fitzpatrick Plagge, Sinead&lt;/PersonName&gt; (2003)</strong><br />
+<em>&lt;Title&gt;Associate Dean, Enrollment Services&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;AA, Olympic College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, M.Ed., Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong><a id="g2" name="g2"></a>&lt;PersonName&gt;Galindo, Maria&lt;/PersonName&gt; (2008)</strong><br />
+<em>&lt;Title&gt;Navigator - Student Success Center​&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;ATA, Skagit Valley College&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Geddis, Tiffany&lt;/PersonName&gt; (2003)</strong><br />
+<em>&lt;Title&gt;Navigator - Student Success Center&lt;/Title&gt;&#160;</em><br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;&#160;<br />
+&lt;Qualification&gt;MA, Seattle Pacific University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Gough, Christy&lt;/PersonName&gt; (2014)</strong><br />
+<em>&lt;Title&gt;Interim Associate Dean, Nursing&lt;/Title&gt;&#160;</em><br />
+&lt;Qualification&gt;ASN, Everett Community College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BSN, Washington State University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MSN, Seattle Pacific University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Greybeck, Michele (Shelly)&lt;/PersonName&gt; (2015)</strong><br />
+<em>&lt;Title&gt;Head Start Administrative Services Manager&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, MA, University of Phoenix&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Grothe, Margo&lt;/PersonName&gt; (1999)</strong><br />
+<em>&lt;Title&gt;Life Transitions Program Coordinator&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;ATA, Skagit Valley College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Hall, Melody (Kim)&lt;/PersonName&gt; (2006)</strong><br />
+  &lt;Title&gt;
+<em>Manager, Bookstore</em>&lt;/Title&gt;<br />
+&lt;Qualification&gt;BA, Eastern Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, Royal Roads University&lt;/Qualification&gt;</p>
+
+<p><strong><a id="h2" name="h2"></a>&lt;PersonName&gt;Hategekimana, Claver&lt;/PersonName&gt; (2016)</strong><br />
+<em>&lt;Title&gt;Director of eLearning&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;AA, Des Moines Area Community College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BS, Wartburg College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MS, Dakota State University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;Ph.D., Iowa State University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Heiser, Andy&lt;/PersonName&gt; (2014)</strong><br />
+<em>&lt;Title&gt;Director of Information Technology&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BS, University of Washington&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, University of British Columbia&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Hill, Rose&lt;/PersonName&gt; (2010)</strong><br />
+<em>&lt;Title&gt;Financial Aid Outreach Specialist&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;AA, Skagit Valley College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, University of Phoenix&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Holdal, Jeanne&lt;/PersonName&gt; (2007)</strong><br />
+<em>&lt;Title&gt;Parent Involvement Coordinator, ECEAP</em>&lt;/Title&gt;<br />
+&lt;Qualification&gt;AA, Southern Oregon State University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, University of Hawaii&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Howland, Sindie&lt;/PersonName&gt; (1997)</strong><br />
+<em>&lt;Title&gt;Program Manager for Enrollment Services&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;AA, Skagit Valley College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, Washington State University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Hutchinson, Kristina&lt;/PersonName&gt; (2010)</strong><br />
+<em>&lt;Title&gt;HR Analyst&lt;/Title&gt;&#160;</em><br />
+&lt;Qualification&gt;ATA, Skagit Valley College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BS, WGU-Washington&#160;&lt;/Qualification&gt;</p>
+
+<p><strong><a id="j2" name="j2"></a>&lt;PersonName&gt;Jansen, Jane&lt;/PersonName&gt; (1998)</strong><br />
+<em>&lt;Title&gt;Tutorial Program Coordinator&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BS, California State University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, California State University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Johnson, Michelle&lt;/PersonName&gt; (2017)</strong><br />
+<em>&lt;Title&gt;Veteran&#8217;s Program and Recruitment Specialist&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, American Military Academy&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Jolly, Jim&lt;/PersonName&gt; (2004)</strong><br />
+<em>&lt;Title&gt;Director of Student Development&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BS, Embry-Riddle Aeronautical University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MBA, Brandman University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Jordan, Sandy&lt;/PersonName&gt; (2016)</strong><br />
+<em>&lt;Title&gt;Activity Director Title III Project STEPS​&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;MBA, Brandman University&lt;/Qualification&gt;</p>
+
+<p><strong><a id="k2" name="k2"></a>&lt;PersonName&gt;Kirk, Aaron&lt;/PersonName&gt; (2013)</strong><br />
+<em>&lt;Title&gt;Navigator - Student Success Center​&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, College of Wooster&lt;/Qualification&gt;</p>
+
+<p><a id="l2" name="l2"><strong>&lt;PersonName&gt;Landon, Glenda&lt;/PersonName&gt; (2005)</strong></a><br />
+<em>&lt;Title&gt;Navigator - TRIO Student Success Coach&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;AAUCT, Skagit Valley College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, Washington State University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;M.Ed., Western Washington University&lt;/Qualification&gt;&#160;</p>
+
+<p><strong>&lt;PersonName&gt;Lounsbery, Sandra&lt;/PersonName&gt; (2004)</strong><br />
+<em>&lt;Title&gt;Health &amp; Nutrition Coordinator, ECEAP​&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, University of Washington&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MS, University of Hawaii - Manoa&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Lykins, Mary Ellen&lt;/PersonName&gt; (2010)</strong><br />
+<em>&lt;Title&gt;Director, Skagit/Islands Head Start &amp; ECEAP​&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BS, Kennedy College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, University of Nebraska&lt;/Qualification&gt;</p>
+
+<p><a id="m2" name="m2"><strong>&lt;PersonName&gt;MacFarland, Brandy&lt;/PersonName&gt; (2016)</strong></a><br />
+<em>&lt;Title&gt;Head Start Program Manager&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, MA, University of Montana&lt;/Qualification&gt;&#160;</p>
+
+<p><strong>&lt;PersonName&gt;Martin, James&lt;/PersonName&gt; (2014)</strong><br />
+<em>&lt;Title&gt;Assistant Controller​</em>&lt;/Title&gt;<br />
+&lt;Qualification&gt;BA, Western Governor&#8217;s University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Martin, Randy&lt;/PersonName&gt; (2000)</strong><br />
+<em>&lt;Title&gt;Director, San Juan Center and Road Scholar&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BS, Pacific Lutheran University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;McGinnis, James&lt;/PersonName&gt; (2013)</strong><br />
+<em>&lt;Title&gt;Information Systems Administrator</em>&lt;/Title&gt;<br />
+&lt;Qualification&gt;ATA, Skagit Valley College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BS, Southern Illinois University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Moran, Stacie&lt;/PersonName&gt; (1997)&#160;</strong><br />
+<em>&lt;Title&gt;Administrative Analyst, Office of Instruction&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;AA &amp; AAUCT, Skagit Valley College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, Washington State University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Morgan, David&lt;/PersonName&gt; (1999)</strong><br />
+<em>&lt;Title&gt;Infrastructure Support Manager&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;ATA, Skagit Valley College&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Murphy, Brian&lt;/PersonName&gt; (1998)</strong><br />
+<em>&lt;Title&gt;Director of Student Life&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong><a id="n2" name="n2"></a>&lt;PersonName&gt;Nansel, Kathy&lt;/PersonName&gt; (1996)</strong><br />
+<em>&lt;Title&gt;Confidential Secretary to the Vice President for Instruction&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;ATA, Skagit Valley College&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Nording, Theresa&lt;/PersonName&gt; (1997)</strong><br />
+<em>&lt;Title&gt;Program Manager of Reporting and Records&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;ATA, Skagit Valley College&lt;/Qualification&gt;</p>
+
+<p><a id="o2" name="o2"></a><strong>&lt;PersonName&gt;Orellana, Katelynn&lt;/PersonName&gt; (2013)</strong><br />
+<em>&lt;Title&gt;Navigator - Student Success Center&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;AA, Cascadia Community College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Ouellette, Wendy&lt;/PersonName&gt; (2016)</strong><br />
+<em>&lt;Title&gt;Navigator - High School Completion&lt;/Title&gt;&#160;</em><br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, Northern Michigan University&lt;/Qualification&gt;</p>
+
+<p><strong><a id="p2" name="p2"></a>&lt;PersonName&gt;Padilla-Torres, Daisy&lt;/PersonName&gt; (2014)</strong><br />
+<em>&lt;Title&gt;Maestros Para el Pueblo Liaison&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;M.Ed., Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Payne, Annie&lt;/PersonName&gt; (2005)</strong><br />
+<em>&lt;Title&gt;Education Support Specialist&lt;/Title&gt;&#160;</em><br />
+&lt;Qualification&gt;BA, University of Tennessee&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Payne, Jessie&lt;/PersonName&gt; (2016)</strong><br />
+<em>&lt;Title&gt;Customer Relations Management Specialist&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;AA, BAS, University of Phoenix&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Penland, Shiloh&lt;/PersonName&gt; (2017)</strong><br />
+<em>&lt;Title&gt;Director of TRiO Student Support Services&lt;/Title&gt;&#160;</em><br />
+&lt;Qualification&gt;AAS, Wenatchee Valley College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BS, Washington State University&lt;/Qualification&gt;&#160;<br />
+&lt;Qualification&gt;MA, Gonzaga University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Peregrina Carrillo, Diana&lt;/PersonName&gt; (2014)</strong><br />
+<em>&lt;Title&gt;Recruitment and Navigation Specialist - Multicultural&lt;/Title&gt;&#160;</em><br />
+&lt;Qualification&gt;BA, Univer University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Perez, Veronica&lt;/PersonName&gt;&#160;</strong><br />
+<em>&lt;Title&gt;Health Services Coordinator&lt;/Title&gt; / &lt;Title&gt;Athletic Trainer&lt;/Title&gt;&#160;</em><br />
+&lt;Qualification&gt;BA, Central Washington University&lt;/Qualification&gt;&#160;<br />
+&lt;Qualification&gt;MA, California Baptist University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Pettay, Chad&lt;/PersonName&gt; (2012)</strong><br />
+<em>&lt;Title&gt;Associate Director Residence Life&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;M.Ed, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Picton, Evan&lt;/PersonName&gt; (2014)</strong><br />
+<em>&lt;Title&gt;Associate Director, Institutional Planning &amp; Effectiveness&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, Central Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, University of North Carolina at Charlotte&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Powell, Sean&lt;/PersonName&gt; (2014)</strong><br />
+<em>&lt;Title&gt;Network Administrator</em>&lt;/Title&gt;<br />
+&lt;Qualification&gt;BS, Southern Utah University&lt;/Qualification&gt;</p>
+
+<p><strong><a id="r2" name="r2"></a>&lt;PersonName&gt;Radeleff, Lisa&lt;/PersonName&gt; (1997)</strong><br />
+<em>&lt;Title&gt;Administrative Assistant/Executive Secretary to the President&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;Senior Studies - Rio Hondo College&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Randall, Amber&lt;/PersonName&gt; (2016)</strong><br />
+<em>&lt;Title&gt;Assessment Specialist&lt;/Title&gt;&#160;</em><br />
+&lt;Qualification&gt;AA, Walla Walla Community College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;&#160;<br />
+&lt;Qualification&gt;MA, Washington State University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Reep, Kelly&lt;/PersonName&gt; (2004)</strong><br />
+<em>&lt;Title&gt;Community Relations &amp; Special Events Manger</em>&lt;/Title&gt;<br />
+&lt;Qualification&gt;AA, Skagit Valley College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, Washington State University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Richter, Rebecca&lt;/PersonName&gt; (2005)</strong><br />
+<em>&lt;Title&gt;Program Manager, Head Start&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, California State University - Long Beach&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Robbins, George&lt;/PersonName&gt; (Rip) (1994)</strong><br />
+<em>&lt;Title&gt;Advisor/Coordinator, KSVR&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Rosales, Yadira&lt;/PersonName&gt; (2012)</strong><br />
+<em>&lt;Title&gt;Director of Multicultural &amp; Student Services&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;AAUCT, Skagit Valley College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, M.Ed., Western Washington University&lt;/Qualification&gt;</p>
+
+<p><a id="s2" name="s2"><strong> &lt;PersonName&gt;Salinas, Elizabeth&lt;/PersonName&gt; (2005)</strong></a><br />
+<em>&lt;Title&gt;Navigator&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;AA, Skagit Valley College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, MA, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Santos, Andrew&lt;/PersonName&gt; (2016)</strong><br />
+<em>&lt;Title&gt;Aerospace Recruiter&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, West Texas A&amp;M University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Savoy, (Anthony) Tony&lt;/PersonName&gt; (2016)</strong><br />
+<em>&lt;Title&gt;Coordinator of Soccer Operations &amp; Women&#8217;s Soccer Coach</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Schulz, Christa&lt;/PersonName&gt; (2004)</strong><br />
+<em>&lt;Title&gt;Director of International Programs&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, Valparaiso University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, WGU Washington&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Scott, Dave&lt;/PersonName&gt; (1990)</strong><br />
+<em>&lt;Title&gt;Director of Facilities and Operations&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;Cert. Stationary Engineer Apprenticeship&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Shiflett, Erin&lt;/PersonName&gt; (2010)</strong><br />
+<em>&lt;Title&gt;Educational Planner&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;AAUCT, Skagit Valley College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, Eastern Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, Monash University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Smith, Cherie&lt;/PersonName&gt; (2002)</strong><br />
+<em>&lt;Title&gt;Program Manager&lt;/Title&gt;, &lt;Title&gt;Head Start&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;AA, Peninsula Community College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, Washington State University&lt;/Qualification&gt;</p>
+
+<p><strong><a id="t2" name="t2"></a>&lt;PersonName&gt;Tate, Donovan&lt;/PersonName&gt; (2012)</strong><br />
+<em>&lt;Title&gt;Recruitment &amp; Navigation Specialist&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;AA, Lower Columbia College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, Whitworth University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Tautvydas, Nida&lt;/PersonName&gt; (2006)</strong><br />
+<em>&lt;Title&gt;Executive Director of McIntyre Hall&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, University of Wisconsin, Madison&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, Columbia College&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Tuininga, Brad&lt;/PersonName&gt; (2015)</strong><br />
+<em>&lt;Title&gt;Director of Philanthropy</em>&lt;/Title&gt;<br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><a id="v2" name="v2"><strong>&lt;PersonName&gt;Valles, Brenda&lt;/PersonName&gt; (2016)</strong></a><br />
+<em>&lt;Title&gt;Executive Director of Equity and Inclusion&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, California State University&#160;&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;M.Ed., Ph.D, University of Utah&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Veltri, Brock&lt;/PersonName&gt; (2013)</strong><br />
+<em>&lt;Title&gt;Cooperative Education Coordinator &amp; Men&#8217;s Basketball Coach</em>&lt;/Title&gt;<br />
+&lt;Qualification&gt;AA, Peninsula College&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BS, University of Utah&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MPE, Idaho State University&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Veltri, Jennifer&lt;/PersonName&gt; (2013)</strong><br />
+&lt;Title&gt;
+<em>Program Manager for Recruitment, Outreach and Retention&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, University of Utah&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MA, University of Washington&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Vivanco Meza, Estevan&lt;/PersonName&gt; (2016)</strong><br />
+<em>&lt;Title&gt;Navigator - Student Success Center&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA-Spanish, Western Washington University&lt;/Qualification&gt;&#160;<br />
+&lt;Qualification&gt;BA-Education, Western Washington University&lt;/Qualification&gt;</p>
+
+<p><a id="w2" name="w2"><strong>&lt;PersonName&gt;Walters, James&lt;/PersonName&gt; (1997)</strong></a><br />
+<em>&lt;Title&gt;Director of Marketing and Communication&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;AA, Ferris State University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;BA, Western Washington University&lt;/Qualification&gt;<br />
+&lt;Qualification&gt;MBA, City University of Seattle&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Wanless, Mark&lt;/PersonName&gt; (2015)</strong><br />
+<em>&lt;Title&gt;Manager of Administrative Services, Whidbey Island</em>&lt;/Title&gt;<br />
+&lt;Qualification&gt;AA, BS, MA, Columbia College&lt;/Qualification&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Wells, Braden&lt;/PersonName&gt; (2016)</strong><br />
+<em>&lt;Title&gt;Men&#8217;s Baseball and Intramural Coach&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;AA, Dixie State University&lt;/Qualification&gt;&#160;<br />
+&lt;Qualification&gt;BA, Oregon State University&lt;/Qualification&gt;&#160;</p>
+
+<p><strong>&lt;PersonName&gt;Wood, Becky&lt;/PersonName&gt; (2016)</strong><br />
+<em>&lt;Title&gt;Workforce Navigator - Student Success Center&lt;/Title&gt;</em><br />
+&lt;Qualification&gt;BA, MS, Western Washington University&lt;/Qualification&gt;</p>
+
+<h2><a id="classified-staff" name="classified-staff"></a>Classified Staff</h2>
+
+<p><a href="#a3">A</a> | <a href="#b3">B</a> | <a href="#c3">C</a> | <a href="#d3">D</a> | <a href="#e3">E</a> | <a href="#f3">F</a> | <a href="#g3">G</a> | <a href="#h3">H</a> | <a href="#i3">I</a> | <a href="#j3">J</a> | <a href="#k3">K</a> | <a href="#l3">L</a> | <a href="#m3">M</a> | <a href="#n3">N</a> | <a href="#o3">O</a> | <a href="#p3">P</a> | Q | <a href="#r3">R</a> | <a href="#s3">S</a> | <a href="#t3">T</a> | U | <a href="#v3">V</a> | <a href="#w3">W</a> | X | Y | <a href="#z3">Z</a></p>
+
+<p><strong><a id="a3" name="a3"></a>&lt;PersonName&gt;Aguirre, Alvan&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Information Technology Specialist 4&lt;/Title&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Aguilia Cuevas, Yolanda&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Allen, Angelo&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Custodian 2</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Angulo, Celina&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Office Assistant 3 - Counseling</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Arreguin, Juan&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Coordinator - Latino Radio Programs</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Atkins, Maryann&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 4, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Atwell, Angela&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Specialist 2 - San Juan Center</em>&lt;/Title&gt;</p>
+
+<p><strong><a id="b3" name="b3"></a>&lt;PersonName&gt;Badillo, Maria&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 2, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Badillo, Melissa&lt;/PersonName&gt;&#160;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3,&#160;Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Baines, Patti&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 4, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Barber, Jill&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Barry, Phyllis&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Administrative Assistant 3 - Professional/Technical Education</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Benson, Gary&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Custodian 4</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Bishop, Julie&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Library &amp; Archives Paraprofessional 4</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Blue, Shawna&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Assistant - Environmental Conservation</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Boettcher, Lindsay&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Cashier 2 - Business Office</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Borja-Hurtado, Karina&lt;/PersonName&gt;</strong><br />
+&lt;Title&gt;Program Support Supervisor 1, Basic Education&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Bos, Alyse&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 1, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Buenaventura, Joe&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Information Technology Specialist 3, Whidbey Island Campus</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Burton, Allison&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong><a id="c3" name="c3"></a>&lt;PersonName&gt;Cairns, Don&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Graphic Designer Senior</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Cardenas, Cruz&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Carrigg, Sheila&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 4, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Casteel, John&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Custodian 2</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Chamberlain, Danni&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Christy, Jamie&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Clark, Jesse&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Custodian 2</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Clark, Sandra&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 4, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Confer, Shirley&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Fiscal Technician 2, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Cortez, Mara&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 2, ECEAP​</em>&lt;/Title&gt;</p>
+
+<p><a id="d3" name="d3"><strong>&lt;PersonName&gt;De Maria, Dianna&lt;/PersonName&gt;</strong></a><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 2, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Degnan, Cathy&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Office Assistant 3 - San Juan Center&lt;/Title&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;DeJesus, Janet&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Assistant Manager - Bookstore</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Dillon, Tina&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Custodian 3</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Dimaggio, Victoria&lt;/PersonName&gt;&#160;</strong><br />
+<em>&lt;Title&gt;Instruction &amp; Classroom Support Technician 2</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Downs, Dale&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Maintenance Custodian</em>&lt;/Title&gt;</p>
+
+<p><strong><a id="e3" name="e3"></a>&lt;PersonName&gt;Early, Torstein&lt;/PersonName&gt; (2007)</strong><br />
+&lt;Title&gt;Information Technology Specialist 1&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Eberle, Leah&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Coordinator-Student Life</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Emory, Ian&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Maintenance Mechanic 2</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Engberg, Kimberly&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Human Resource Consultant Assistant l&lt;/Title&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Erickson, Amy&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Coordinator - Student Success Center&lt;/Title&gt;</em></p>
+
+<p><strong><a id="f3" name="f3"></a>&lt;PersonName&gt;Fagan, Laurel&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Ferguson, Kelly&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Credentials Evaluator 3 - Whidbey Island Campus</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Frolander, Karin&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Fiscal Specialist 1 - Business Office</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Fuentes, Cinthya&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong><a id="g3" name="g3"></a>&lt;PersonName&gt;Gaitan, Patricia&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Garner, Andrea&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Administrative Assistant 4, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Garza, Lily&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Fiscal Analyst 2 - Business Office</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Garza, Michele&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Coordinator - Enrollment Services</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Gomez, &#8220;Cynthia&#8221; Hortencia&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;HR Consultant</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Gonzales, Laura&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 2,&#160;Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Gonzalez-Hendrix, Eddie&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Office Assistant 3, ECEAP</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Good, James&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Custodian 3</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Graham, Juliet&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Gregush, Jamie&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3,&#160;Head Start&lt;/Title&gt;&#160;</em></p>
+
+<p><strong>&lt;PersonName&gt;Grider, Corinne&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Custodian 2</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Griffin, Patricia&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Grove, Amanda&lt;/PersonName&gt;&#160;</strong><br /> 
+&lt;Title&gt;
+<em>Program Coordinator, WIC&lt;/Title&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Guzman, Sylvia&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong><a id="h3" name="h3"></a>&lt;PersonName&gt;Hamburg, Corrin&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Laboratory Assistant 2 - Environmental Conservation</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Hamilton, Calvin&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Maintenance Custodian</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Hansey, Lucas&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Information Technology Specialist 3</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Hatfield, Rob&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Credentials Evaluator 3 - Enrollment Services​</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Hauser, David&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Building and Grounds Supervisor B, Whidbey Island Campus</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Havens, Beverly&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Human Resource Consultant 2</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Havertz, Cynthia&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Heggie, James&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Veterans&#8217; Benefits Assistant</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Heinzman, Shannon&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Information Technology Specialist 2</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Highet, Lyn&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Food Service Manager 5&lt;/Title&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Hilden, Linda&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 4, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Hoffbuhr, Kristen&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Instruction &amp; Classroom Support Tech 4, Biology</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Howland, Jacob&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Maintenance Mecahnic 1</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Hudson, Sharon&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 1, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Hull, Jennifer&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Office Assistant 3 - Marine Skills Center</em>&lt;/Title&gt;</p>
+
+<p><strong><a id="i3" name="i3"></a>&lt;PersonName&gt;Irish, Kimberly&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 4, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong><a id="j3" name="j3"></a>&lt;PersonName&gt;Jensen, Susan&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Coordinator - Registration, Whidbey Island Campus</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Johnson, Jennifer&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong><a id="k3" name="k3"></a>&lt;PersonName&gt;Kaczmarczyk, Edward&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Maintenance Mechanic 3</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Kane, Helen&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Human Resource Consultant 1</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Karr-Gotz, Barbara&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3,&#160;Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Kestler, Gisella&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3,&#160;Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;King, Sarah&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 2,&#160;Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Kislyanka, Vera&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3,&#160;Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Koetje, Vivian&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Mail Process - Driver Lead, Copy &amp; Mail Center</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Kozowski, Karen (Becky)&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Coordinator - Financial Aid</em>&lt;/Title&gt;</p>
+
+<p><strong><a id="l3" name="l3"></a>&lt;PersonName&gt;Lacey, Marilana (Shelley)&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Specialist 3 - Financial Aid&lt;/Title&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;LaFave, Susan&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Support Supervisor l - Nursing&#160;</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Lanning, Brandy&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Coordinator - Enrollment Services&lt;/Title&gt;&#160;</em></p>
+
+<p><strong>&lt;PersonName&gt;Leber, Sandra&lt;/PeronName&gt;</strong><br />
+<em>&lt;Title&gt;Program Manager A - Athletics&lt;/Title&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Lecoq, Amy&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3,&#160;Head Start&lt;/Title&gt;&#160;</em></p>
+
+<p><strong>&lt;PersonName&gt;Levesen, Lance&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Campus Security Officer</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Levesen, Stephanie&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Library &amp; Archives Paraprofessional 3</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Lilgreen, Mark&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Maintenance Mechanic 3</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Luna, Aracely&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Social Work Assistant 2, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Lynch, Paula&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3,&#160;Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong><a id="m3" name="m3"></a>&lt;PersonName&gt;Marin Machias, Gerzon&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Coordinator, Financial Aid</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Martin, Charolette&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Administrative Assistant 2&lt;/Title&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;McAdam, Bradley&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Maintenance Custodian</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;McGinnis, Patricia&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 2, ECEAP&lt;/Title&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Mendoza, Eva&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Custodian 2</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Mendoza, Paige&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Maintenance Custodian&lt;/Title&gt;&#160;</em></p>
+
+<p><strong>&lt;PersonName&gt;Merryman, Darcy&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Information Technology Specialist 1</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Miller, Teresa&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Secretary Supervisor - Information Technology</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Mirante, Lisa&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Fiscal Analyst 1- Business Office&#160;</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Mitchell, Kimberly&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Library &amp; Archives Paraprofessional 3, Whidbey Island Campus</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Moen, Bruce&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Maintenance Mechanic 2, Whidbey Island Campus</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Monrreal-Perez, Estafani (Jasmin)&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 2,&#160;Head Start &lt;/Title&gt;&#160;</em></p>
+
+<p><strong>&lt;PersonName&gt;Morris, Scott&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Instructional and Classroom Support Tech 3, Chemistry/Physical Science</em>&lt;/Title&gt;</p>
+
+<p><strong><a id="n3" name="n3"></a>&lt;PersonName&gt;Navarro, Kathryn&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Nolan, Joyce&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong><a id="o3" name="o3"></a>&lt;PersonName&gt;O&#8217;Connell, Susana&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Omdal, Bret&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Information Technology Specialist 5</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;O&#8217;Neil, Shannon&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Administrative Services Manager A - Campus View Village</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Ortega Solis, Yalda&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Office Assistant 2, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonNane&gt;Ortiz, Doricela&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Social Work Assistant 1, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Ortiz Zavala, Lorena&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Oshiro, Elizabeth&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Assistant - Arts and Sciences</em>&lt;/Title&gt;</p>
+
+<p><strong><a id="p3" name="p3"></a>&lt;PersonName&gt;Paiz, Terri&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Social Work Assistant 2, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Parks, Raynette&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Manager A - Student Life, Whidbey Island Campus</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Petosa, Karen&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 4, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong><a id="r3" name="r3"></a>&lt;PersonName&gt;Ray, Nickie&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 2, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Rentz, Jennifer&lt;/PersonName&gt;&#160;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 2, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Reyes, Kathryn&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Administrative Assistant 3 - Student Services, Whidbey Island Campus</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Ricketts, Lillian (Lilly)&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Custodian 2</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Rodriguez, Celina&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Assistant, Basic Education</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Rodriguez, Noemi&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Coordinator - Enrollment Services&#160;</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Rodriguez-Ortiz, Lorenza&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3,&#160;Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Rolfson, Carrie&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Food Service Supervisor 1</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Rollin, Rosalia&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Custodian 3, Whidbey Island Campus</em>&lt;/Title&gt;</p>
+
+<p><strong><a id="s3" name="s3"></a>&lt;PersonName&gt;Sanchez, Angelica&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Coordinator - Enrollment Services</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Sanchez, Betsey&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Assistant - I-CATCH</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Saulness, Maria&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3,&#160;Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Schnabel, Hans&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Coordinator - Enrollment Services&#160;</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Scheer, Debra&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 4,&#160;Head Start&#160;</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Schmeltz, Kathryn&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Fiscal Specialist 1, Whidbey Island Campus</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Shannon, Katherine&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Instruction &amp; Classroom Support Technician 1</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Skouson, Natalie&lt;/PersonName&gt;&#160;</strong><br />
+<em>&lt;Title&gt;Program Coordinator, WIC</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Smock, Justin&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Support Supervisor 1&lt;/Title&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Somers, Steven&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Maintenance Mechanic 3&#160;</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Sopher, Samantha&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Assistant - Health Services&lt;/Title&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;St. Germain, Benjamin&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Information Technology Specialist 5</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Stevens, Theresa&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Specialist 3 - Financial Aid</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Stoker, Timothy&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Maintenance Custodian 1</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Suit Gregush, Jamie&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 2,&#160;Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong><a id="t3" name="t3"></a>&lt;PersonName&gt;Thompson, Jaime&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3, ECEAP&lt;/Title&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Thompson, Valerie&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Assistant - Professional/Technical Education</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Tomeoka, Tatsuo (Tom)&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Specialist 2 - Financial Aid&lt;/Title&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Torres, Sandra&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Trout, Aimee&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Custodian 2</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Tygret, Anne&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 2, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Tzintzun, Brianda&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 3&lt;/Title&gt;<br />
+&lt;Title&gt;Infant/Toddler Specialist - Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong><a id="v3" name="v3"></a>&lt;PersonName&gt;Valdes, Darrell&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Campus Security - Mount Vernon Campus</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Van Norman, Yoshimi&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Fiscal Technician 3 - Business Office, Whidbey Island Campus</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Vast, Anna&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 2, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Viola, Angela&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Coordinator - International Programs</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Vivanco, Oralia&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 2, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong><a id="w3" name="w3"></a>&lt;PersonName&gt;Welsh, Scott&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Custodian 2</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Werling, Sarah&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Early Childhood Program Specialist 4, Head Start</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Wilbur, Brenda&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Fiscal Technician 2 - Business Office</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Williams, Barbara&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Coordinator - Physical Plant</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Williams, Karin&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Fiscal Analyst 2, Foundation</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Willis, Alvin&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Information Technology Specialist 3</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Wright, Jaxoniun&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Maintenance Custodian​</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Wysomierski, Debra&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Program Coordinator - Financial Aid, Whidbey Island Campus</em>&lt;/Title&gt;</p>
+
+<p><strong><a id="z3" name="z3"></a>&lt;PersonName&gt;Zhekovska, Katya&lt;/PersonName&gt;</strong><br />
+<em>&lt;Title&gt;Fiscal Specialist 1 - Business Office</em>&lt;/Title&gt;</p>
+
+<h2><a id="faculty-administration-emeriti" name="faculty-administration-emeriti"></a>Faculty &amp; Administration Emeriti</h2>
+
+<p><a href="#a4">A</a> | <a href="#b4">B</a> | <a href="#c4">C</a> | <a href="#d4">D</a> | <a href="#e4">E</a> | <a href="#f4">F</a> | <a href="#g4">G</a> | <a href="#h4">H</a> | <a href="#i4">I</a> | <a href="#j4">J</a> | <a href="#k4">K</a> | <a href="#l4">L</a> | <a href="#m4">M</a> | <a href="#n4">N</a> | <a href="#o4">O</a> | <a href="#p4">P</a> | Q | <a href="#r4">R</a> | <a href="#s4">S</a> | <a href="#t4">T</a> | U | V | <a href="#w4">W</a> | X | <a href="#y4">Y</a> | <a href="#z4">Z</a></p>
+
+<p><strong><a id="a4" name="a4"></a>&lt;PersonName&gt;Adams, Flora&lt;/PersonName&gt; (1986)</strong><br />
+<em>&lt;Domain&gt;Nursing</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Almvig, Deene&lt;/PersonName&gt; (1963)</strong><br />
+<em>&lt;Domain&gt;Counseling</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Alotrico, George&lt;/PersonName&gt; (1967)</strong><br />
+<em>&lt;Domain&gt;English</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Anderson, Howard&lt;/PersonName&gt; (1961)</strong><br />
+<em>&lt;Domain&gt;Mathematics</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Anderson, Jerry&lt;/PersonName&gt; (1996)</strong><br />
+<em>&lt;Domain&gt;Firefighter Training</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Anderson, Larry&lt;/PersonName&gt; (1981)</strong><br />
+<em>&lt;Domain&gt;Electronics&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus</em>&lt;/InstituteName&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Angst, Laura&lt;/PersonName&gt; (1927)</strong><br />
+<em>&lt;Domain&gt;Biology&lt;/Domain&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Armstrong, Joan&lt;/PersonName&gt; (1961)</strong><br />
+<em>&lt;Domain&gt;Kinesiology, Exercise Science</em>&lt;/Domain&gt;</p>
+
+<p><strong><a id="b4" name="b4"></a>&lt;PersonName&gt;Barnes, Trish&lt;/PersonName&gt; (1989)</strong><br />
+<em>&lt;Domain&gt;English&lt;/Domain&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Batterberry, Robert&lt;/PersonName&gt; (1967)</strong><br />
+<em>&lt;Domain&gt;Computer Science</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Beals, Nancy&lt;/PersonName&gt; (1973)</strong><br />
+<em>&lt;Domain&gt;Family Life, Early Childhood Education</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Biehl, George&lt;/PersonName&gt; (1998)</strong><br />
+<em>&lt;Domain&gt;Science&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus</em>&lt;/InstituteName&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Bidwell, Rucilla&lt;/PersonName&gt; (1963)</strong><br />
+<em>&lt;Domain&gt;Office &amp; Business Technology</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Biggers, John&lt;/PersonName&gt; (1962)</strong><br />
+<em>&lt;Domain&gt;Civil Engineering</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Bratley, Mel&lt;/PersonName&gt; (1989)</strong><br />
+<em>&lt;Domain&gt;Telecommunications</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Budler, Robert&lt;/PersonName&gt; (1977)</strong><br />
+<em>&lt;Domain&gt;Marine Maintenance Technology&lt;/Domain&gt;, </em>&lt;InstituteName&gt;<em>Whidbey Island Campus</em><em></em>&lt;/InstituteName&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Burke, Marjean&lt;/PersonName&gt; (1972)</strong><br />
+<em>&lt;Domain&gt;Nursing&lt;/Domain&gt;, </em>&lt;/InstituteName&gt;<em>Whidbey Island Campus</em><em></em>&lt;/InstituteName&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Burkholder, Dennis&lt;/PersonName&gt; (1970)</strong><br />
+<em>&lt;Domain&gt;Parks Operation &amp; Maintenance&lt;/Domain&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Burns, Robert&lt;/PersonName&gt; (1975)</strong><br />
+<em>&lt;Domain&gt;Diesel Mechanics</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Bushaw, Mark&lt;/PersonName&gt; (1994)</strong><br />
+<em>&lt;Domain&gt;Welding</em>&lt;/Domain&gt;</p>
+
+<p><strong><a id="c4" name="c4"></a>&lt;PersonName&gt;Campbell, Marilyn&lt;/PersonName&gt; (1983)</strong><br />
+<em>&lt;Domain&gt;Coordinator&lt;/Domain&gt;, </em><em></em>&lt;InstituteName&gt;<em>San Juan Center</em><em></em><em></em>&lt;/InstituteName&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Chandler, Jerome&lt;/PersonName&gt; (1977)</strong><br />
+<em>&lt;Domain&gt;Physical Sciences</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Chatt, Orville&lt;/PersonName&gt; (1965)</strong><br />
+<em>&lt;Domain&gt;Art</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Chaves-Pickett, Pat&lt;/PersonName&gt; (1971)</strong><br />
+<em>&lt;Domain&gt;Spanish&lt;/Domain&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Clarke, Thomasina&lt;/PersonName&gt; (1971)</strong><br />
+<em>&lt;Domain&gt;Public Information</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Cole, Geoffrey&lt;/PersonName&gt; (1969)</strong><br />
+<em>&lt;Domain&gt;Speech, English&lt;/Domain&gt;, </em><em></em>&lt;InstituteName&gt;<em>Whidbey Island Campus</em><em></em><em></em>&lt;/InstituteName&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Cole, Norwood&lt;/PersonName&gt; (1947)</strong><br />
+<em>&lt;Domain&gt;President</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Collins, Czarna&lt;/PersonName&gt; (1960)</strong><br />
+<em>&lt;Domain&gt;English</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Conner, Sally&lt;/PersonName&gt; (1974)</strong><br />
+<em>&lt;Domain&gt;Office Administration &amp; Accounting Technologies</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Coole, Walter&lt;/PersonName&gt; (1965)</strong><br />
+<em>&lt;Domain&gt;Philosophy</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Coslor, Rex&lt;/PersonName&gt; (1961)</strong><br />
+<em>&lt;Domain&gt;Speech</em>&lt;/Domain&gt;</p>
+
+<p><strong><a id="d4" name="d4"></a>&lt;PersonName&gt;Darden, Mary&lt;/PersonName&gt; (1979)</strong><br />
+<em>&lt;Domain&gt;Counselor&lt;/Domain&gt;, </em><em></em>&lt;InstituteName&gt;<em>Whidbey Island Campus</em><em></em><em></em>&lt;/InstituteName&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Delaney, George&lt;/PersonName&gt; (1966)</strong><br />
+<em>&lt;Domain&gt;Vice President&lt;/Domain&gt;, &lt;Domain&gt;Education Services</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Dike, Barbara&lt;/PersonName&gt; (1964)</strong><br />
+<em>&lt;Domain&gt;Nursing</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Dunlap, Lynn&lt;/PersonName&gt; (1979)</strong><br />
+<em>&lt;Domain&gt;English</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Dursch, H. Robert&lt;/PersonName&gt; (1950)</strong><br />
+&lt;Domain&gt;
+<em>Physical Sciences</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Duvall, Dave&lt;/PersonName&gt; (1948)</strong><br />
+<em>&lt;Title&gt;Director of Athletics, Physical Education &amp; Health</em>&lt;Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Duvall, Richard&lt;/PersonName&gt; (1962)</strong><br />
+<em>&lt;Domain&gt;Chemistry</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Dye, Marilyn&lt;/PersonName&gt; (1960)</strong><br />
+<em>&lt;Domain&gt;Nursing</em>&lt;/Domain&gt;</p>
+
+<p><strong><a id="e4" name="e4"></a>&lt;PersonName&gt;Eaton, Sydney&lt;/PersonName&gt; (1959)</strong><br />
+<em>&lt;Domain&gt;Art</em>&lt;/Domain&gt;</p>
+
+<p><strong><a id="f4" name="f4"></a>&lt;PersonName&gt;Fader, Edith&lt;/PersonName&gt; (1960)</strong><br />
+<em>&lt;Domain&gt;Library</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Ferris, Gerald&lt;/PersonName&gt; (1968)</strong><br />
+<em>&lt;Domain&gt;Automotive Technology</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Folsom, Kathy&lt;/PersonName&gt; (1981)</strong><br />
+<em>&lt;Domain&gt;Nursing&lt;/Domain&gt;, </em><em></em>&lt;InstituteName&gt;<em>Whidbey Island Campus</em><em></em><em></em>&lt;/InstituteName&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Folsom, Riley&lt;/PersonName&gt; (1978)</strong><br />
+<em>&lt;Domain&gt;Social Sciences</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Forbes, William&lt;/PersonName&gt; (1969)</strong><br />
+<em>&lt;Domain&gt;History</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Ford, James&lt;/PersonName&gt; (1954)</strong><br />
+<em>&lt;Domain&gt;President</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Fredlund, Emelyne&lt;/PersonName&gt; (1994)</strong><br />
+<em>&lt;Domain&gt;Counselor</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Friedlander, Andy&lt;/PersonName&gt; (1984)</strong><br />
+<em>&lt;Domain&gt;Theatre</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Funk, Carol&lt;/PersonName&gt; (1996)</strong><br />
+<em>&lt;Domain&gt;Counselor&lt;/Domain&gt;, </em><em></em>&lt;InstituteName&gt;<em>Whidbey Island Campus</em><em></em><em></em>&lt;/InstituteName&gt;</p>
+
+<p><strong><a id="g4" name="g4"></a>&lt;PersonName&gt;Garcia, Joe<em></em><em></em>&lt;/PersonName&gt; (1990)</strong><br />
+<em>&lt;Domain&gt;Office &amp; Business Technology</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Gaston, Margaret&lt;/PersonName&gt; (1970)</strong><br /> 
+&lt;Domain&gt;
+<em>Office &amp; Business Technology&lt;</em>/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Graham, Bob&lt;/PersonName&gt; (1991)</strong><br />
+<em>&lt;Domain&gt;English&lt;/Domain&gt;, &lt;InstituteName&gt;<em></em>Whidbey Island Campus</em>&lt;/InstituteName&gt;<em></em></p>
+
+<p><strong>&lt;PersonName&gt;Grambo, Marilyn&lt;/PersonName&gt; (1979)</strong><br />
+<em>&lt;Domain&gt;Program Manager&lt;/Domain&gt;, &lt;InstituteName&gt;<em></em>Head Start</em>&lt;/InstituteName&gt;<em></em></p>
+
+<p><strong>&lt;PersonName&gt;Gray, Wendy&lt;/PersonName&gt; (1988)</strong><br />
+<em>&lt;Domain&gt;Business Management</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Greene, Lorna&lt;/PersonName&gt; (1994)</strong><br />
+<em>&lt;Domain&gt;Early Childhood Education</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Guinn, Gary&lt;/PersonName&gt; (1977)</strong><br />
+<em>&lt;Domain&gt;Office &amp; Business Technology&lt;/Domain&gt;, &lt;Domain&gt;Business Administration</em>&lt;/Domain&gt;</p>
+
+<p><strong><a id="h4" name="h4"></a>&lt;PersonName&gt;Hahn, Martin&lt;/PersonName&gt; (1996)</strong><br />
+<em>&lt;Domain&gt;Culinary Arts &amp; Hospitality Management</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Hansen, Willard&lt;/PersonName&gt; (1967)</strong><br />
+<em>&lt;Domain&gt;Farm Management</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Harker, Tom&lt;/PersonName&gt; (1992)</strong><br />
+<em>&lt;Domain&gt;Vice President&lt;/Domain&gt;, &lt;Domain&gt;Administrative Services&lt;/Domain&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Havist, Marjorie&lt;/PersonName&gt; (1980)</strong><br />
+<em>&lt;Domain&gt;DeanM&lt;/Domain&gt;, &lt;Domain&gt;Library/Media Services</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Hayes, H.H.&lt;/PersonName&gt; (1971)</strong><br />
+<em>&lt;Domain&gt;Dean&lt;Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus</em><em>&lt;/InstituteName&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Headley, Carolyn&lt;/PersonName&gt; (1971)</strong><br />
+<em>&lt;Domain&gt;Developmental Education</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Hektner, Marilyn&lt;/PersonName&gt; (1978)</strong><br />
+<em>&lt;Domain&gt;Controller</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Helm, Jan&lt;/PersonName&gt; (1998)</strong><br />
+<em>&lt;Domain&gt;Nursing&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus</em><em>&lt;/InstituteName&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Helmer, Louise&lt;/PersonName&gt; (1960)</strong><br />
+<em>&lt;Domain&gt;Counseling</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Hemming, Jeanette&lt;/PersonName&gt; (1995)</strong><br />
+<em>&lt;Domain&gt;Medical Assistant</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Hendrick, Linda&lt;/PersonName&gt; (1982)</strong><br />
+<em>&lt;Domain&gt;Librarian</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Hernandez, Angelica&lt;/PersonName&gt; (1993)</strong><br />
+<em>&lt;Domain&gt;English</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Heverling, Janet&lt;/PersonName&gt; (1977)</strong><br />
+<em>&lt;Domain&gt;Family Life/Early Childhood Education&lt;/Domamin&gt;, &lt;InstituteName&gt;Whidbey Island Campus</em><em>&lt;/InstituteName&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Hiestand, Tom&lt;PersonName&gt; (1988)</strong><br />
+<em>&lt;Domain&gt;Cooperative Education&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus</em><em>&lt;/InstituteName&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Hodson, Charlee&lt;/PersonName&gt; (1984)</strong><br />
+<em>&lt;Domain&gt;Science&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus</em><em>&lt;/InstituteName&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Hodson, George&lt;/PersonName&gt; (1948)</strong><br />
+<em>&lt;Domain&gt;President</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Hopke, Del&lt;/PersonName&gt; (1974)</strong><br />
+<em>&lt;Domain&gt;Diesel Mechanics</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Hrutfiord, Donald&lt;/PersonName&gt; (1969)</strong><br />
+<em>&lt;Domain&gt;Automotive Technology</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Huber, Carol&lt;/PersonName&gt; (1979)</strong><br />
+<em>&lt;Domain&gt;Office Administration and Accounting Technologies&lt;/Domain&gt; - &lt;InstituteName&gt;Whidbey Island Campus</em><em>&lt;/InstituteName&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Huffman, Richard&lt;/PersonName&gt; (1980)</strong><br />
+<em>&lt;Domain&gt;Mathematics</em>&lt;/Domain&gt;</p>
+
+<p><strong><a id="i4" name="i4"></a>&lt;PersonName&gt;Indorf, Susan&lt;/PersonName&gt; (1977)</strong><br />
+<em>&lt;Domain&gt;Mathematics&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus</em><em>&lt;/InstituteName&gt;</em></p>
+
+<p><strong><a id="j4" name="j4"></a>&lt;PersonName&gt;Jafrey, Owais&lt;/PersonName&gt; (1986)</strong><br />
+<em>&lt;Domain&gt;Librarian&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus</em><em>&lt;/InstituteName&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Johnson, Dick&lt;/PersonName&gt; (1972)</strong><br />
+<em>&lt;Domain&gt;Business Administration, Economics</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Johnson, Sharon (Sherry)&lt;/PersonName&gt; (1974)</strong><br />
+<em>&lt;Domain&gt;Director&lt;/Domain&gt;, Title III Faculty Development</em></p>
+
+<p><strong>&lt;PersonName&gt;Jordheim, Gerald&lt;/PersonName&gt; (1962)</strong><br />
+<em>&lt;Domain&gt;Student Guidance</em>&lt;/Domain&gt;</p>
+
+<p><strong><a id="k4" name="k4"></a>&lt;PersonName&gt;Keeler, Ted&lt;/PersonName&gt; (1983)</strong><br />
+<em>&lt;Domain&gt;Associate Dean&lt;/Domain&gt;, &lt;Domain&gt;E-Learning</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Kenney, John (Jack)&lt;/PersonName&gt; (1961)</strong><br />
+<em>&lt;Domain&gt;Business Administration &amp; Economics</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Kennicott, Patrick&lt;/PersonName&gt; (1991)</strong><br />
+<em>&lt;Title&gt;Executive Director, SVC Foundation</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Kent, Susan&lt;/PersonName&gt; (1985)</strong><br />
+<em>&lt;Title&gt;Librarian</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Keyes, Beverly&lt;/PersonName&gt; (2002)</strong><br />
+<em>&lt;Title&gt;Associate Dean of Health Sciences</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Kiel, Edna&lt;/PersonName&gt; (1978)</strong><br />
+<em>&lt;Domain&gt;English</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Kienholz, Oliver&lt;/PersonName&gt; (1972)</strong><br />
+<em>&lt;Domain&gt;Farm Management</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Klein, Phyllis&lt;/PersonName&gt; (1979)</strong><br />
+<em>&lt;Domain&gt;Library</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Knutzen, Gary&lt;/PersonName&gt; (1965)</strong><br />
+<em>&lt;Title&gt;Director, Athletic Programs</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Knutzen, Judi&lt;/PersonName&gt; (1979)</strong><br />
+<em>&lt;Title&gt;Administrative Assistant for Assessment</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Koci, Michele&lt;/PersonName&gt; (1979)</strong><br />
+<em>&lt;Title&gt;Dean, Professional Technical Education</em>&lt;/Title&gt;</p>
+
+<p><strong><a id="l4" name="l4"></a>&lt;PersonName&gt;LaFollette, Jere&lt;/PersonName&gt; (2005)</strong><br />
+<em>&lt;Domain&gt;Human Services</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;LaFond, John&lt;/PersonName&gt; (1979)</strong><br />
+<em>&lt;Domain&gt;Business Administration&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus</em><em>&lt;/InstituteName&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Lancaster, Debra&lt;/PersonName&gt; (1983)</strong><br />
+<em>&lt;Title&gt;Director, Customized Training</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Lee, Alice&lt;/PersonName&gt; (1989)</strong><br />
+<em>&lt;Domain&gt;English&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus</em><em>&lt;/InstituteName&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Lemberg Ross, Linda&lt;/PersonName&gt; (1983)</strong><br />
+<em>&lt;Domain&gt;Nursing</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Leonard, Barbara&lt;/PersonName&gt; (1981)</strong><br />
+<em>&lt;Domain&gt;Office &amp; Business Technology</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Leopold, Fern&lt;/PersonName&gt; (1957)</strong><br />
+<em>&lt;Domain&gt;Library</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Lewis, Charles&lt;/PersonName&gt; (1929)</strong><br />
+<em>&lt;Title&gt;Dean</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Loughlin, Beau&lt;/PersonName&gt; (1970)</strong><br />
+<em>&lt;Domain&gt;Computer Information Systems&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus</em><em>&lt;/InstituteName&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Lukasik, Leslie&lt;/PersonName&gt; (2000)</strong><br />
+  &lt;Title&gt;
+<em>Business Administration/Business Resource Coordinator, Whidbey Island Campus&lt;/Title&gt;</em></p>
+
+<p><strong><a id="m4" name="m4"></a>&lt;PersonName&gt;Maloney, Jr., Ted&lt;/PersonName&gt; (1988)</strong><br />
+<em>&lt;Title&gt;Director of Global Initiatives</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Mashburn, Gloria&lt;/PersonName&gt; (1965)</strong><br />
+<em>&lt;Domain&gt;Library&lt;/Domain&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Matthews, Jean&lt;/PersonName&gt; (1978)</strong><br />
+<em>&lt;Domain&gt;Human Services</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Matzen, Vicki&lt;/PersonName&gt; (1975)</strong><br />
+<em>&lt;Domain&gt;Developmental Education&lt;/Domain&gt;, &lt;Domain&gt;English&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus</em><em>&lt;/InstituteName&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Maue, Mary&lt;/PersonName&gt; (2009)</strong><br />
+<em>&lt;Domain&gt;Nursing</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;McCleery, James&lt;/PersonName&gt; (1984)</strong><br />
+<em>&lt;Domain&gt;Mathematics&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus</em><em>&lt;/InstituteName&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;McHale, Nancy&lt;/PersonName&gt; (1990)</strong><br />
+<em>&lt;Title&gt;Counselor&lt;/Title&gt;, &lt;InstituteName&gt;Whidbey Island Campus</em><em>&lt;/InstituteName&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;McLatchy, Pat&lt;/PersonName&gt; (1973)</strong><br />
+<em>&lt;Domain&gt;History</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;McRill, Chari&lt;/PersonName&gt; (2007)</strong><br />
+<em>&lt;Title&gt;Librarian&lt;/Title&gt;, &lt;InstituteName&gt;Whidbey Island Campus</em><em>&lt;/InstituteName&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Milne, James&lt;/PersonName&gt; (1964)</strong><br />
+<em>&lt;Title&gt;Physics</em>&lt;/Tite&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Miller, Alison&lt;/PersonName&gt; (1996)</strong><br />
+<em>&lt;Domain&gt;French, Spanish</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Moburg, Barbara&lt;/PersonName&gt; (1986)</strong><br />
+<em>&lt;Domain&gt;Social Science</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Monroe, Jim&lt;/PersonName&gt; (1963)</strong><br />
+<em>&lt;Domain&gt;Biology</em>&lt;Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Moore, Tom&lt;/PersonName&gt; (1970)</strong><br />
+<em>&lt;Domain&gt;Marine Technology</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Morrell, Madison&lt;/PersonName&gt; (1959)</strong><br />
+<em>&lt;Domain&gt;Social Services</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Mortensen, Claire&lt;/PersonName&gt; (1987)</strong><br />
+<em>&lt;Domain&gt;Nursing</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Muga, David&lt;/PersonName&gt; (1992)</strong><br />
+<em>&lt;Domain&gt;Social Science</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Mullen, Val&lt;/PersonName&gt; (2000)</strong><br />
+<em>&lt;Domain&gt;Biology</em>&lt;/Domain&gt;</p>
+
+<p><strong><a id="n4" name="n4"></a>&lt;PersonName&gt;Naas, Susan&lt;/PersonName&gt; (1990)</strong><br />
+<em>&lt;Domain&gt;Nursing</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Nelson, C.A.&lt;/PersonName&gt; (1926)</strong><br />
+<em>&lt;Domain&gt;Superintendent</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Nelson, Dan&lt;/PersonName&gt; (1989)</strong><br />
+<em>&lt;Domain&gt;Welding</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Nelson, William&lt;/PersonName&gt; (1978)</strong><br />
+<em>&lt;Domain&gt;Law Enforcement</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Nowadnick, Richard&lt;/PersonName&gt; (1952)</strong><br />
+<em>&lt;Title&gt;Dean of Instruction</em>&lt;/Title&gt;</p>
+
+<p><strong><a id="o4" name="o4"></a>&lt;PersonName&gt;Ordóñez, Anita&lt;/PersonName&gt; (1995)</strong><br />
+<em>&lt;Title&gt;Director, Multicultural Student Services/Counselor</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Osborne, Gerald&lt;/PersonName&gt; (1984)</strong><br />
+<em>&lt;Domain&gt;Welding</em>&lt;/Domain&gt;</p>
+
+<p><strong><a id="p4" name="p4"></a>&lt;PersonName&gt;Pass, Robert (Skip) &lt;/PersonName&gt;(1978)</strong><br />
+<em>&lt;Domain&gt;Biology&lt;/Domain&gt;, &lt;Domain&gt;Agriculture</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Pedersen, Joe&lt;/PersonName&gt; (1966)</strong><br />
+<em>&lt;Domain&gt;Electronics&lt;/Domain&gt;, &lt;Domain&gt;Computer Repair</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Pettitt, Maureen&lt;/PersonName&gt; (1998)</strong><br />
+<em>&lt;Title&gt;Director of Institutional Research</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Pflugfelder, Christina&lt;/PersonName&gt; (1998)</strong><br />
+<em>&lt;Title&gt;Biology&lt;/Title&gt;, &lt;InstituteName&gt;Whidbey Island Campus​</em><em>&lt;/InstituteName&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Phipps, Wendell&lt;/PersonName&gt; (1951)</strong><br />
+<em>&lt;Title&gt;Superintendent of Schools</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Pierce, James&lt;/PersonName&gt; (1965)</strong><br />
+<em>&lt;Domain&gt;Physical Science&lt;/Domain&gt;, &lt;Domain&gt;Chemistry</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Plucker, Robert&lt;/PersonName&gt; (1968)</strong><br />
+<em>&lt;Domain&gt;Music</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Poppe, Stanley&lt;/PersonName&gt; (1962)</strong><br />
+<em>&lt;Title&gt;Director of Athletics</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Pruiett, Ramon&lt;/PersonName&gt; (1956)</strong><br />
+<em>&lt;Domain&gt;Outdoor Education</em>&lt;/Domain&gt;</p>
+
+<p><strong><a id="r4" name="r4"></a>&lt;PersonName&gt;Randall, Delores&lt;/PersonName&gt; (1977)</strong><br />
+<em>&lt;Domain&gt;Nursing&lt;/Domain&gt;, &lt;InstituteName&gt;Whidbey Island Campus</em><em>&lt;/InstituteName&gt;</em></p>
+
+<p><strong>&lt;PersonName&gt;Raymond, Katherine&lt;/PersonName&gt; (1960)</strong><br />
+&lt;Domain&gt;
+<em>Counseling</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Reeves, Joseph&lt;/PersonName&gt; (1926)</strong><br />
+&lt;Title&gt;
+<em>Principal</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Reid, Ann Chadwick&lt;/PersonName&gt; (1986)</strong><br />
+<em>&lt;Domain&gt;Art</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Requa, William (Kim)&lt;/PersonName&gt; (1980)</strong><br />
+<em>&lt;Title&gt;Director of TRIO Student Support Services</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Robbin, Rand&lt;/PersonName&gt; (1962)</strong><br />
+&lt;Domain&gt;
+<em>Art</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Roberts, Walter&lt;/PersonName&gt; (1957)</strong><br /> 
+  &lt;Domain&gt;<em>Director of Technical Education</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Rodriquez, Ted&lt;/PersonName&gt; (1969)</strong><br />
+  &lt;Domain&gt;
+<em>Electronics</em>&lt;/Domain&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Rohloff, Dennis&lt;/PersonName&gt; (1975)</strong><br />
+<em>&lt;Title&gt;Director, Plant Operations</em>&lt;/Title&gt;</p>
+
+<p><strong>&lt;PersonName&gt;Roller, Harry&lt;/PersonName&gt; (1958)</strong><br />
+  &lt;Domain&gt;
+<em>Engineering</em>&lt;/Domain&gt;</p>
+
+<p><strong>Royal, Helen (1982)</strong><br />
+<em>Office &amp; Business Technology, Whidbey Island Campus</em></p>
+
+<p><strong><a id="s4" name="s4"></a>Saben, Donald (1976)</strong><br />
+<em>Welding</em></p>
+
+<p><strong>Sawyer, Gertrude (1954)</strong><br />
+<em>Nursing</em></p>
+
+<p><strong>Siebert, Sheila (1965)</strong><br />
+<em>Nursing</em></p>
+
+<p><strong>Sigmar, Wallace (1971)</strong><br />
+<em>Dean, Student Services &amp; Foundation Liaison</em></p>
+
+<p><strong>Shane, Fay (1985)</strong><br />
+<em>Director, SVC Foundation</em></p>
+
+<p><strong>Smith, Brad (1996)</strong><br />
+<em>Physical Science</em></p>
+
+<p><strong>Smith, Paul (1964)</strong><br />
+<em>Personnel, Physical Plant</em></p>
+
+<p><strong>Sorensen, James (1969)</strong><br />
+<em>Dean of Admissions &amp; Registration</em></p>
+
+<p><strong>Sprague, Brinton (1988)</strong><br />
+<em>Vice President, Educational Services</em></p>
+
+<p><strong>Stanwood, Les (1980)</strong><br />
+<em>English, Whidbey Island Campus</em></p>
+
+<p><strong>St. Germain, Jeanette (1994)</strong><br />
+<em>Assistant Controller</em></p>
+
+<p><strong>Stroosma, Peter (1981)</strong><br />
+<em>Director, Business Resource Center</em></p>
+
+<p><strong>Sult, Larry (1989)</strong><br />
+<em>Philosophy</em></p>
+
+<p><strong>Swietzer, Michael (1991)</strong><br />
+<em>Marine Maintenance, Whidbey Island Campus</em></p>
+
+<p><strong><a id="t4" name="t4"></a>Tarro, Phillip (1964)</strong><br />
+<em>Drama, Speech</em></p>
+
+<p><strong>Tarry, Ronald (1987)</strong><br />
+<em>Law Enforcement</em></p>
+
+<p><strong>Tate, Greg (1977)</strong><br />
+<em>Art</em></p>
+
+<p><strong>Thomas, H. Jeanne (1966)</strong><br />
+<em>English</em></p>
+
+<p><strong>Thompson, Gary (1986)</strong><br />
+<em>Truck Driver Training</em></p>
+
+<p><strong>Thompson, Kenneth (1963)</strong><br />
+<em>Physical Education</em></p>
+
+<p><strong>Tillotson, Delbert (1954)</strong><br />
+<em>Business Services</em></p>
+
+<p><strong>Tinker, Susan (1973)</strong><br />
+<em>Vice President, Educational Services</em></p>
+
+<p><strong>Tobin, Harry (1965)</strong><br />
+<em>Business Management Training</em></p>
+
+<p><strong>Turley, Jack (1962)</strong><br />
+<em>Business Management</em></p>
+
+<p><strong>Turner, E. Glen (1962)</strong><br />
+<em>English</em></p>
+
+<p><strong><a id="w4" name="w4"></a>Waters (Flint), Nancy (1988)</strong><br />
+<em>Developmental Education, Student Support Services</em></p>
+
+<p><strong>White, Fay (2003)</strong><br />
+<em>Nursing</em></p>
+
+<p><strong>Whiting, Jack (1976)</strong><br />
+<em>Diesel Mechanics</em></p>
+
+<p><strong>Will, Anne (1998)</strong><br />
+<em>History</em></p>
+
+<p><strong>Williamson, Bert (1970)</strong><br />
+<em>Vice President, Business &amp; Community Development</em></p>
+
+<p><strong>Witmer, Michael (1973)</strong><br />
+<em>Psychology</em></p>
+
+<p><strong>Woiwod, Linda (1987)</strong><br />
+<em>Dean of Student Services</em></p>
+
+<p><strong><a id="y4" name="y4"></a>Young, Carl (1996)</strong><br />
+<em>Executive Director, College Advancement</em></p>
+
+<p><strong><a id="z4" name="z4"></a>Ziomkowski, Anne (1998)</strong><br />
+<em>Counseling</em></p>
+
+<h2><a id="staff-emeriti" name="staff-emeriti"></a>Staff Emeriti</h2>
+
+<p><a href="#a5">A</a> | <a href="#b5">B</a> | <a href="#c5">C</a> | <a href="#d5">D</a> | <a href="#e5">E</a> | <a href="#f5">F</a> | G | <a href="#h5">H</a> | I | <a href="#j5">J</a> | <a href="#k5">K</a> | <a href="#l5">L</a> | <a href="#m5">M</a> | <a href="#n5">N</a> | <a href="#o5">O</a> | <a href="#p5">P</a> | Q | <a href="#r5">R</a> | <a href="#s5">S</a> | <a href="#t5">T</a> | U | <a href="#v5">V</a> | <a href="#w5">W</a> | X | <a href="#y5">Y</a> | Z</p>
+
+<p>Date in parentheses indicates year of initial service to SVC.</p>
+
+<p><strong><a id="a5" name="a5"></a>Abbott, Mike (1999)</strong><br />
+<em>Veterans Benefits Specialist</em></p>
+
+<p><strong>Alexander, Bruce (1994)</strong><br />
+<em>Workforce Education</em></p>
+
+<p><strong>Allen, Jan (1966)</strong><br />
+<em>President&#8217;s Office</em></p>
+
+<p><strong>Anderson, Betty (1980)</strong><br />
+<em>Instructional Technician II</em></p>
+
+<p><strong>Armstrong, Mary Lou (1988)</strong><br />
+<em>Business Office</em></p>
+
+<p><strong>Auld, Hale (1970)</strong><br />
+<em>Maintenance, Whidbey Island Campus</em></p>
+
+<p><strong><a id="b5" name="b5"></a>Baker, Linda (2000)</strong><br />
+<em>Program Manager A - Academic Instruction</em></p>
+
+<p><strong>Batchelor, Carolyn (1990)</strong><br />
+<em>Library &amp; Archives Paraprofessional 4, Whidbey Island Campus</em></p>
+
+<p><strong>Bjork, Cathie (1957)</strong><br />
+<em>Registration</em></p>
+
+<p><strong>Boos, Clarence (1971)</strong><br />
+<em>Custodial</em></p>
+
+<p><strong>Bos, Glenn (1969)</strong><br />
+<em>Maintenance</em></p>
+
+<p><strong>Brandt, Gloria (1978)</strong><br />
+<em>Secretary Supervisor, Counseling</em></p>
+
+<p><strong>Broadgate, Herlinda (1989)</strong><br />
+<em>Program Assistant - Career Services</em></p>
+
+<p><strong>Bultman, Esther (1988)</strong><br />
+<em>Administration Office, Whidbey Island Campus</em></p>
+
+<p><strong>Burton, Dallas (1988)</strong><br />
+<em>Maintenance</em></p>
+
+<p><strong><a id="c5" name="c5"></a>Church, Pamela (1997)</strong><br />
+<em>Director, Career Services</em></p>
+
+<p><strong>Cook, Larry (1987)</strong><br />
+<em>Maintenance Mechanic 3</em></p>
+
+<p><strong><a id="d5" name="d5"></a>De Muth, Ray (1980)</strong><br />
+<em>Program Coordinator, Whidbey Island Campus</em></p>
+
+<p><strong>Dibble, Charmie (1978)</strong><br />
+<em>Culinary Arts</em></p>
+
+<p><strong>Dickerson, Raleigh (1982)</strong><br />
+<em>Campus Security</em></p>
+
+<p><strong>Doctor, Phyllis (1977)</strong><br />
+<em>Program Support Supervisor I, Admissions</em></p>
+
+<p><strong>Dooley, Nancy (1978)</strong><br />
+<em>Business Office</em></p>
+
+<p><strong><a id="e5" name="e5"></a>Ebel-Higgins, Gail (1986)</strong><br />
+<em>Administrative Assistant to the VP of Business &amp; Community Development</em></p>
+
+<p><strong>Eklund, Ethelyn (1975)</strong><br />
+<em>Secretary, Nursing</em></p>
+
+<p><strong>Elde-Hansen, Clara (1958)</strong><br />
+<em>Business Office</em></p>
+
+<p><strong>Elles, Alice (1972)</strong><br />
+<em>Whidbey Island Campus</em></p>
+
+<p><strong><a id="f5" name="f5"></a>Fahl, Raymond (1965)</strong><br />
+<em>Custodian</em></p>
+
+<p><strong>Frasier, Joyce (1975)</strong><br />
+<em>Educational Services</em></p>
+
+<p><strong><a id="h5" name="h5"></a>Hann, Lynn (2003)</strong><br />
+<em>Program Coordinator, South Whidbey Center</em></p>
+
+<p><strong>Hansen, Willa (1962)</strong><br />
+<em>Bookstore Sales Manager</em></p>
+
+<p><strong>Haren, Marilyn (1998)</strong><br />
+<em>Administrative Assistant 3, Whidbey Island Campus</em></p>
+
+<p><strong>Hurd, Linda (1990)</strong><br />
+<em>Developmental Education</em></p>
+
+<p><strong><a id="j5" name="j5"></a>Jurgens, Paul (1984)</strong><br />
+<em>Maintenance</em></p>
+
+<p><strong><a id="k5" name="k5"></a>Kinley, Verla (1969)</strong><br />
+<em>Registration</em></p>
+
+<p><strong>Kotash, Karen (2000)</strong><br />
+<em>Fiscal Analyst 3 - SVC Foundation</em></p>
+
+<p><strong><a id="l5" name="l5"></a>Le Dent-Iankovski, Gayle</strong><br />
+<em>Retail Clerk 2 - Bookstore</em></p>
+
+<p><strong>Ledbetter, Hazel (1974)</strong><br />
+<em>Continuing Education</em></p>
+
+<p><strong>Libbey, Darlene (1974)</strong><br />
+<em>Payroll</em></p>
+
+<p><strong>Lisherness, Norma (1978)</strong><br />
+<em>Media Technician Lead - Information Technology</em></p>
+
+<p><strong>Lundquist, Anne (1978)</strong><br />
+<em>Bookstore Office Manager</em></p>
+
+<p><strong>Lundquist, Fran (1963)</strong><br />
+<em>Library</em></p>
+
+<p><strong><a id="m5" name="m5"></a>Magee, Eileen (1960)</strong><br />
+<em>Financial Aid</em></p>
+
+<p><strong>Mains, Mary Lee (1998)</strong><br />
+<em>Cashier 2, Business Office</em></p>
+
+<p><strong>Mann, Clyde (1992)</strong><br />
+<em>Veteran&#8217;s Affairs / Financial Aid Assistant</em></p>
+
+<p><strong>Matier, Ira (1977)</strong><br />
+<em>Custodian</em></p>
+
+<p><strong>McGuinness, Lois (1979)</strong><br />
+<em>Program Coordinator, Financial Aid</em></p>
+
+<p><strong>McKeehan, Sharon (1974)</strong><br />
+<em>Program Coordinator, Financial Aid</em></p>
+
+<p><strong>Metzger, Stephanie (1998)</strong><br />
+<em>Transcript Evaluator</em></p>
+
+<p><strong>Moen, James (1979)</strong><br />
+<em>Custodian, Whidbey Island Campus</em></p>
+
+<p><strong>Moon (Nash), Wendy (1984)</strong><br />
+<em>Administrative Assistant, Whidbey Island Campus</em></p>
+
+<p><strong>Morris, Paul (1982)</strong><br />
+<em>Maintenance</em></p>
+
+<p><strong>Morris, Penny (1979)</strong><br />
+<em>Secretary Supervisor</em></p>
+
+<p><strong>Murphy, Barbara (1981)</strong><br />
+<em>Fiscal Specialist 1 - Business Office</em></p>
+
+<p><strong><a id="n5" name="n5"></a>Nakashima, Stanley</strong><br />
+<em>Custodian 2</em></p>
+
+<p><strong>Nelson, Arlene (1963)</strong><br />
+<em>Chief Accountant, Business Office</em></p>
+
+<p><strong>Nelson, Kenneth (Ken) (1999)</strong><br />
+<em>Information Technology Specialist 5</em></p>
+
+<p><strong>Nevitt, Deanne (1986)</strong><br />
+<em>Program Coordinator, Culinary Arts</em></p>
+
+<p><strong>Niles, Kathy (1999)</strong><br />
+<em>Fiscal Technician II, Whidbey Island Campus</em></p>
+
+<p><strong>Nondorf, Gary (1991)</strong><br />
+<em>Grounds &amp; Nursery Specialist 2</em></p>
+
+<p><strong><a id="o5" name="o5"></a>Olson, Kathrine (1985)</strong><br />
+<em>Library Specialist II</em></p>
+
+<p><strong>Olson, William</strong><br />
+<em>Maintenance Mechanic 1</em></p>
+
+<p><strong><a id="p5" name="p5"></a>Palmer, Cheryl (1993)</strong><br />
+<em>Program Coordinator - Information Technology</em></p>
+
+<p><strong>Pederson, Joan (1994)</strong><br />
+<em>Office Assistant 3 - Registration</em></p>
+
+<p><strong>Peters, Randall (1989)</strong><br />
+<em>Instructional Network Manager</em></p>
+
+<p><strong><a id="r5" name="r5"></a>Reid, Denny (1995)</strong><br />
+<em>Accommodations Specialist, Disability Access Services</em></p>
+
+<p><strong><a id="s5" name="s5"></a>Schlabach, Gary (1999)</strong><br />
+<em>Custodian 1</em></p>
+
+<p><strong>Sears, Jan</strong><br />
+<em>Office Assistant 3 - Counseling</em></p>
+
+<p><strong>Seman, Mary (1979)</strong><br />
+<em>Counseling</em></p>
+
+<p><strong>Skurdahl, David (1990)</strong><br />
+<em>Custodian 2</em></p>
+
+<p><strong>Smith, Craig (1998)</strong><br />
+<em>Maintenance Mechanic 3</em></p>
+
+<p><strong>Smith, Rozanne (1999)</strong><br />
+<em>Procurement &amp; Supply Specialist 3 - Business Office</em></p>
+
+<p><strong>Stewart, Robert (1962)</strong><br />
+<em>Maintenance</em></p>
+
+<p><strong>Sylte, Emil (1972)</strong><br />
+<em>Security</em></p>
+
+<p><strong><a id="t5" name="t5"></a>Turner, Marcia (1984)</strong><br />
+<em>Payroll</em></p>
+
+<p><strong><a id="v5" name="v5"></a>Valentine, Percy (1977)</strong><br />
+<em>Registration, Whidbey Island Campus</em></p>
+
+<p><strong>Vance, Dan (1991)</strong><br />
+<em>Maintenance Mechanic 1</em></p>
+
+<p><a id="w5" name="w5"></a><strong>Walker, Sherry (1994)</strong><br />
+<em>Administrative Assistant to the Vice President of Whidbey Island Campus</em></p>
+
+<p><strong>Warren, Maxine (1962)</strong><br />
+<em>Registration</em></p>
+
+<p><strong>Whelan, Bonnie (1973)</strong><br />
+<em>Day Vocational</em></p>
+
+<p><strong>Wiechert, Carl (1986)</strong><br />
+<em>Office Assistant</em></p>
+
+<p><strong>Wing, Shirley (1981)</strong><br />
+<em>Library</em></p>
+
+<p><strong>Wirta, Hazel (1988)</strong><br />
+<em>Custodian</em></p>
+
+<p><strong><a id="y5" name="y5"></a>Ytgard, Reidar (1983)</strong><br />
+<em>Maintenance</em></p>
+							  </td>
+							</tr>
+							<tr>
+							  <td>&nbsp;</td>
+						    </tr>
+						  </table>
+                                                  <br /><hr /><div style="float: right">&#160;<a href="#" class="acalog_top_link acalog-highlight-ignore">Back to Top</a> | <a rel="nofollow" href="/content.php?catoid=8&amp;navoid=175&amp;print" onclick="acalogPopup('/content.php?catoid=8&amp;navoid=175&amp;print', 'print_preview', 770, 530, 'yes');return false;" target="_blank" class="print_link acalog-highlight-ignore" alt="Text Version"><img src="img/print.gif" width="10" height="14" border="0" hspace="5" align="absmiddle" alt="Print-Friendly Page.">Print-Friendly Page</a></div><div class="acalog-social-media-links" style="float: right;"><a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcatalog.skagit.edu%2Fcontent.php%3Fcatoid%3D8%26navoid%3D175&t=I am looking at the Faculty and Staff Directory page at Skagit Valley College" border="0" target="_blank"><img src="acalogicons/facebook_16.png" border="0" alt="Facebook this Page"></a> <a href="http://twitter.com/intent/tweet?u=http%3A%2F%2Fcatalog.skagit.edu%2Fcontent.php%3Fcatoid%3D8%26navoid%3D175&t=Check out this page at Skagit Valley College" border="0" target="_blank"><img src="/acalogicons/twitter_16.png" border="0" alt="Tweet this Page"></a></div>
+					  </td>
+				</tr>
+			  </table>
+			</td>
+		  </tr>
+		</table>
+	</td>
+  </tr>
+	<tr>
+	<td class="block_footer_lb">&#160;&#160;&#160;</td>
+	<td class="block_footer_rb">
+<nobr>All <a href="/misc/catalog_list.php?catoid=8" class="footer"  tabIndex="300">catalogs</a> &#169; 2017 Skagit Valley College.</nobr> <nobr>Powered by the <a href="http://www.acalog.com" target="_blank" class="footer">Acalog™ Academic Catalog Management System™ (ACMS™)</a>.</nobr>
+<br />
+	<script type="text/javascript">
+		function showMobile(){
+			var name = 'acalogMobileApp';
+			var value = 'mobile';
+	
+			var date = new Date();
+			date.setTime(date.getTime()+(365*24*60*60*1000));
+			var expires = "; expires="+date.toGMTString();
+			document.cookie = name+"="+value+expires+"; path=/";
+		}
+	</script>
+	<nobr><a href="http://m.catalog.skagit.edu/index.php?theme" onclick="showMobile();" class="footer">Mobile Site</a>.</nobr><script type='text/javascript'>
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-36599744-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script></td>
+	</tr>
+</table>
+<script src="js/smlinks.js" type="text/javascript"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"f1e87b20cf","applicationID":"5857333","transactionName":"bldWNUYCXEJVBkJRVlcdYRNdTFFeWhFTVk0XQlwR","queueTime":0,"applicationTime":699,"atts":"QhBVQw4YT0w=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
